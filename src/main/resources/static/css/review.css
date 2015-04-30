@@ -1,0 +1,309 @@
+
+.displaynone {
+    display: none !important;
+}
+
+#totalProducts {
+    margin: 4px 0 0;
+}
+
+
+.xans-product-additional {
+    clear: both;
+    margin: 45px 0 0;
+}
+
+.xans-product-additional .btnArea {
+    margin: 10px 0;
+    text-align: right;
+}
+.xans-product-additional .btnArea img {
+    margin: 0 0 0 -3px;
+}
+.xans-product-additional table.board {
+    border-bottom: 1px solid #dbdad8;
+    color: #555;
+    font: 11px verdana,돋움;
+    margin: 10px 0 0;
+    table-layout: fixed;
+}
+.xans-product-additional table.board th {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    color: #676767;
+    font: 10px verdana;
+    padding: 10px;
+}
+.xans-product-additional table.board td {
+    border-top: 1px dotted #dbdad8;
+    font: 12px verdana,굴림;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+.xans-product-additional table.board td.left {
+    text-align: left;
+}
+.xans-product-additional table.board td img {
+    margin: 0 2px;
+    vertical-align: middle;
+}
+.xans-product-additional table.board td .view {
+    font: 12px/20px verdana,굴림;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.romi_paging {
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+}
+.romi_paging p, .romi_paging ol, .romi_paging li {
+    display: inline;
+}
+.romi_paging img {
+    vertical-align: middle;
+}
+.romi_paging p {
+    margin: 0;
+}
+.romi_paging ol {
+    margin: 0 10px;
+}
+.romi_paging li {
+    font: 10px "verdana",serif;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.romi_paging li strong {
+    color: #555;
+    font: 10px "verdana",serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+.romi_paging li a {
+    color: #999;
+}
+.romi_paging li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.romi_paging li a.this {
+    color: #b24646;
+}
+.romi_paging a.nolink {
+    cursor: default;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body, code {
+    background: none repeat scroll 0 0 #fff;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+}
+body#popup {
+    min-width: 0;
+}
+li {
+    list-style: outside none none;
+}
+img, fieldset {
+    border: medium none;
+    vertical-align: top;
+}
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+caption {
+    display: none;
+}
+th, td {
+    border: 0 none;
+    font: 12px verdana,"굴림";
+    vertical-align: top;
+}
+input, select, textarea {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+    padding: 0;
+    vertical-align: middle;
+}
+input[type="radio"], input[type="checkbox"], input[type="image"] {
+    border: 0 none;
+}
+input[type="button"] {
+}
+select {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 11px verdana,"돋움",Dotum,sans-serif;
+    height: 24px;
+}
+
+
+hr.layout {
+    display: none;
+}
+a {
+    color: #555;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #ce9375;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+
+
+.displaynone {
+    display: none;
+}
+body {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    margin: 0 auto;
+    position: relative;
+    right: 30px;
+    width: 1150px;
+}
+#container:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#container #snb {
+    border-bottom: 1px solid #e9e9e9;
+    height: 41px;
+    margin: 0 0 10px;
+    position: relative;
+    width: 1150px;
+    z-index: 99;
+}
+#container #contents {
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 0 0 20px;
+    position: relative;
+    width: 1150px;
+}
+
+
+
+span.romi_eng {
+    font: 10px verdana;
+}
+span.romi_kor {
+    font: 12px verdana,굴림;
+}
+span.romi_date {
+    font: 9px tahoma;
+}
+
+
+
+.romi_titleArea {
+    clear: both;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 1000px;
+}
+
+.romi_titleArea h2 {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #6f6f6f;
+    font: 600 10px "Open Sans",sans-serif;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+.romi_titleArea p {
+    color: #8f8f8f;
+    font: 11px 맑은 고딕;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 1000px;
+}
+
+.s {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 8px 15px 4px;
+}
+.m {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 9px 18px 5px;
+}
+.b {
+    cursor: pointer;
+    display: inline-block;
+    font: 12px 굴림;
+    letter-spacing: 0;
+    margin: 0 1px;
+    padding: 15px 20px 11px;
+    text-align: center;
+}
+.romi_btn {
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #f7f7f7;
+    margin: 1px;
+}
+.gray {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid #e4e2e0;
+    color: #414141;
+}
+.white {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e4e2e0;
+    color: #414141;
+}
+.color {
+    background: none repeat scroll 0 0 #fffdf8;
+    border: 1px solid #ece6d6;
+    color: #414141;
+}
+.gray:hover, .white:hover, .color:hover {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #807e7c;
+    color: #414141;
+}
+.gray:active, .white:active, .color:active {
+    background: none repeat scroll 0 0 #626262;
+    border: 1px solid #b7b6b2;
+    color: #fff;
+}

@@ -1,0 +1,262 @@
+#test{
+    padding-left: 10px;
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #009933;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+td {
+    color: #000000;
+    font-family: "굴림","돋움";
+    font-size: 12px;
+}
+form {
+    margin: 0;
+}
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+.input {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1pt;
+    color: #545454;
+    font-family: "굴림","돋움";
+    font-size: 9pt;
+    height: 19px;
+    line-height: 16px;
+}
+.inputB {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1pt;
+    color: blue;
+    font-family: "굴림","돋움";
+    font-size: 9pt;
+    height: 19px;
+    line-height: 16px;
+}
+.inputR {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1pt;
+    color: red;
+    font-family: "굴림","돋움";
+    font-size: 9pt;
+    height: 19px;
+    line-height: 16px;
+}
+.textarea {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1pt;
+    color: #545454;
+    font-family: "굴림","돋움";
+    font-size: 9pt;
+}
+.login_input {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1pt;
+    color: #545454;
+    font-family: "굴림","돋움";
+    font-size: 9pt;
+    height: 20px;
+}
+.s11 {
+    color: #000000;
+    font-family: "굴림","돋움";
+    font-size: 11px;
+    line-height: 160%;
+}
+.s01 {
+    color: #000000;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+.s02 {
+    color: #6d6d6d;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 10px;
+}
+.s03 {
+    color: #ffffff;
+    font-family: "돋움";
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 14px;
+}
+.s04 {
+    color: #666666;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 14px;
+    padding-left: 20px;
+}
+.left_tit {
+    color: #000000;
+    font-family: "굴림","돋움";
+    font-size: 12px;
+    line-height: 140%;
+    padding-left: 5px;
+}
+.left_sub {
+    color: #666666;
+    font-family: "돋움";
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 14px;
+    padding-left: 15px;
+}
+.chk_alt {
+    color: #ffffff;
+    font-family: "돋움";
+    font-size: 12px;
+    line-height: 20px;
+}
+.tit {
+    color: #000000;
+    font-family: "돋움";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 16px;
+}
+.tit_sub {
+    color: #000000;
+    font-family: "돋움";
+    font-size: 13px;
+    font-weight: bold;
+    height: 25px;
+    letter-spacing: -1px;
+    line-height: 25px;
+}
+.tit_alt {
+    color: #6d6d6d;
+    font-family: "돋움";
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 10px;
+}
+.t_rd {
+    background-color: #539ab8;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    height: 1px;
+}
+.t_th {
+    background-image: url("/images/list_bg.gif");
+    background-repeat: repeat-x;
+    color: #ffffff;
+    font-size: 11px;
+    height: 26px;
+    text-align: center;
+}
+.t_line {
+    background: none repeat scroll 0 0 #dcd8d6;
+    height: 1px;
+}
+.t_style {
+    background: none repeat scroll 0 0 #b8d9e1;
+    font-size: 12px;
+}
+.t_name {
+    background: none repeat scroll 0 0 #e8f3f7;
+    color: #11809f;
+    font-family: "굴림","돋움";
+    font-size: 12px;
+    height: 30px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+.t_bname {
+    background: none repeat scroll 0 0 #f6f6f6;
+    color: #000000;
+    font-family: "굴림","돋움";
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-left: 10px;
+}
+.t_value {
+    background: none repeat scroll 0 0 #ffffff;
+    color: #555555;
+    font-family: "굴림","돋움";
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.btn_s {
+    background-color: #555555;
+    border-color: #999999 #000000 #000000 #999999;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-family: 돋움;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+}
+.btn_m {
+    background-color: #8c8c8c;
+    border-color: #c5c5c5 #6e6e6e #6e6e6e #c5c5c5;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-family: 돋움;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+}
+.btn_sm {
+    background-color: #2bb3b5;
+    border-color: #79d9d9 #2aa1a5 #2aa1a5 #79d9d9;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-family: 돋움;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+}
+.btn_l {
+    background-color: #a2b700;
+    border-color: #becd4d #7a8a02 #7a8a02 #becd4d;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-family: 돋움;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+}
+.break {
+    page-break-before: always;
+}
+.stop {
+    page-break-before: avoid;
+}

@@ -1,0 +1,144 @@
+.product ul.prdList {
+    border: 0 none;
+    display: table;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 1050px;
+}
+/*@media screen and (max-width:1400px) {
+    .product ul.prdList {
+    margin: 0;
+    padding: 0;
+    width: 1100px;
+        margin-left: -28px;
+}
+}*/
+.product ul.prdList li.item {
+    color: #838383;
+    display: inline-block;
+    margin: 0 0 30px;
+    vertical-align: top;
+}
+.product ul.prdList li.item div.box {
+    margin: 0 auto;
+}
+.product ul.prdList .name {
+    border-bottom: 1px dotted #dbdad8;
+    border-top: 1px dotted #dbdad8;
+    margin: 10px 0 8px;
+    padding: 11px 2px 7px;
+    position: relative;
+    text-align: center;
+}
+.product ul.prdList .product_new{
+    border: none;
+    margin-top: -20px;
+    height: 25px;
+}
+.product ul.prdList .product_new .product_new_icon{
+    font-size: 35px;
+    color: #f0776c;
+}
+.product ul.prdList .name a {
+    font-family: 'Nanum Gothic';
+    line-height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    letter-spacing: -0.3px;
+}
+
+.product ul.prdList .product-listitem {
+    margin: 0 auto;
+}
+.product ul.prdList .product-listitem li {
+    font-weight: 600;
+    text-align: center;
+}
+.product ul.prdList .product-listitem li span {
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    line-height: 10%;
+    letter-spacing: -0.3px;
+    white-space: pre-line;
+}
+
+.product ul.itemline3 li.item {
+    width: 33.33%;
+}
+.product ul.itemline3 li.item .box {
+    width: 320px;
+}
+.product ul.itemline3 li.item .thumb {
+    width: 320px;
+}
+.product ul.itemline4 li.item {
+    width: 24%;
+}
+.product ul.itemline4 li.item .box {
+    width: 250px;
+}
+.product ul.itemline4 li.item .thumb {
+    width: 250px;
+}
+.product ul.itemline5 li.item {
+    width: 20%;
+}
+.product ul.itemline5 li.item .box {
+    width: 175px;
+}
+.product ul.itemline5 li.item .thumb {
+    width: 175px;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+li {
+    list-style: outside none none;
+}
+img {
+    border: medium none;
+    vertical-align: top;
+    -webkit-transition:ease-out 0.7s; 
+    -moz-transition:ease-out 0.7s; 
+    -o-transition:ease-out 0.7s; 
+    transition:ease-out 0.7s;
+}
+img:hover {
+    opacity: 0.6;
+}
+a {
+    color: #555;
+    outline: medium none;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+.titleArea {
+    clear: both;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 1000px;
+}
+
+.titleArea h2 {
+    color: #6f6f6f;
+    font-family: 'Poiret One',cursive;
+    font-weight: bold;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+

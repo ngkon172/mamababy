@@ -1,0 +1,340 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+body{
+    text-decoration: none;
+    
+}
+#quick {
+    position: relative;
+    top: 210px;
+    width: 60px;
+    left: 20px;
+
+}
+.member-join h3 {
+    font-family: 'Nanum Gothic';
+    color: #444;
+    padding: 50px 0 10px;
+}
+.member-join h3:first-child {
+    margin-top: 0;
+}
+.member-join select {
+    height: 24px;
+    margin: 0 4px 0 0;
+}
+.member-join input, .member-join textarea {
+    padding: 3px;
+}
+.member-join input[type="radio"], .member-join input[type="checkbox"] {
+    border: 0 none;
+    height: 14px;
+    margin: 0 3px 0 0;
+    padding: 0;
+    width: 14px;
+}
+.member-join div.grid, .member-join p.grid {
+    margin: 7px 0 0;
+}
+.member-join ul.grid li {
+    margin: 5px 0 0;
+}
+.member-join .boardWrite table {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    color: #747474;
+    font: 11px/20px verdana,돋움;
+    table-layout: fixed;
+}
+.member-join .boardWrite th {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border-top: 1px solid #eee;
+    font-weight: normal;
+    padding: 12px 0 8px 20px;
+    text-align: left;
+    width: 140px;
+}
+.member-join .boardWrite td {
+    border-top: 1px solid #eee;
+    padding: 8px 0 8px 20px;
+    vertical-align: middle;
+    width: auto;
+}
+/*아이디중복확인 + 우편번호확인 버튼*/
+
+.member-join .boardWrite a {
+    text-decoration: none;
+    font-family: 'Nanum Gothic';
+    border-width: 1px;
+    opacity: 0.8;
+}
+.member-join .boardWrite a:hover {
+    opacity: 1;
+    color: black;
+}
+.member-join .boardWrite a.id_check{
+    padding: 5px;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 10px;
+}
+.member-join .boardWrite a.zipcode_check{
+    padding: 0 5px 0 5px;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.member-join .boardWrite label {
+    padding: 0 20px 0 0;
+}
+.member-join .boardWrite.type th {
+    padding: 22px 0 18px 20px;
+}
+.member-join .boardWrite.type td {
+    padding: 18px 0 18px 20px;
+}
+.member-join .boardWrite .birth {
+    margin: 0 0 0 16px;
+}
+.member-join .boardWrite .interest {
+    line-height: 25px;
+}
+.member-join .boardWrite .interest span {
+    display: inline-block;
+}
+.member-join .boardWrite .interest label {
+    padding-right: 15px;
+}
+.member-join .boardWrite .account li {
+    margin: 5px 0 0;
+}
+.member-join .boardWrite .account li:first-child {
+    margin-top: 0;
+}
+.member-join .boardWrite .account strong {
+    color: #333;
+    display: inline-block;
+    width: 55px;
+}
+.member-join .boardWrite .account p {
+    margin: 3px 0 0 59px;
+}
+.member-join .boardWrite .account select {
+    margin: 0;
+}
+.member-join .agreeArea {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    color: #747474;
+    font: 11px/20px verdana,돋움;
+    padding: 20px 20px 15px;
+}
+.member-join .agreeArea .agree {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e6e6e6;
+    height: 110px;
+    overflow: auto;
+    padding: 20px;
+}
+.member-join .agreeArea .agree p {
+    padding: 0 0 17px;
+}
+.member-join .agreeArea .check {
+    color: #202020;
+    font-size: 12px;
+    padding: 7px 0 0;
+}
+
+.member-join .btnArea.center {
+    text-align: center;
+
+    height: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+    
+}
+.member-join .btnArea.center a{
+    font-family: 'Nanum Gothic';
+    vertical-align: middle; 
+    border-width: 1px;
+}
+.member-join .btnArea.center .joinus:hover{
+    color: white;
+    background: #F18D05;
+    border-color: #F18D05;
+}
+.member-join .btnArea.center .cancel:hover{
+    color: white;
+    background: #E54028;
+    border-color: #E54028;
+}
+
+.member-join #hint_answer {
+    width: 500px;
+}
+.member-join #postcode1, .member-join #postcode2 {
+    text-align: center;
+    width: 40px;
+}
+.member-join #addr1, .member-join #addr2 {
+    margin: 5px 0 0;
+    width: 280px;
+}
+.member-join #phone1, .member-join #mobile1 {
+    width: 60px;
+}
+.member-join #phone2, .member-join #phone3, .member-join #mobile2, .member-join #mobile3 {
+    margin: 0 4px;
+    width: 50px;
+}
+.member-join #email1 {
+    margin-right: 4px;
+}
+.member-join #email2 {
+    margin: 0 4px;
+}
+.member-join #birth_year, .member-join #marry_year, .member-join #partner_year {
+    width: 60px;
+}
+.member-join #birth_month, .member-join #marry_month, .member-join #partner_month, .member-join #birth_day, .member-join #marry_day, .member-join #partner_day {
+    width: 30px;
+}
+.member-join #bank_code {
+    width: 240px;
+}
+.member-join #c_bank_account_no {
+    width: 230px;
+}
+
+#realNameAuth p span {
+    display: inline-block;
+    width: 80px;
+}
+#ipinWrap img, #mobileWrap img {
+    display: block;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+body, code {
+    background: none repeat scroll 0 0 #fff;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+}
+li {
+    list-style: none outside none;
+}
+
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+caption {
+    display: none;
+}
+th, td {
+    border: 0 none;
+    font: 12px verdana,"굴림";
+    vertical-align: top;
+}
+input, select, textarea {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+    padding: 0;
+    vertical-align: middle;
+}
+input[type="radio"], input[type="checkbox"], input[type="image"] {
+    border: 0 none;
+}
+input[type="button"] {
+}
+select {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 11px verdana,"돋움",Dotum,sans-serif;
+    height: 24px;
+}
+body {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#container #contents {
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 0 0 20px;
+    position: relative;
+    width: 1150px;
+}
+#quick {
+    position: absolute;
+    right: -80px;
+    top: 210px;
+    width: 60px;
+}
+.titleArea {
+    clear: both;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 1000px;
+}
+
+.titleArea h2 {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #6f6f6f;
+    font-family: 'Poiret One',cursive;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+.titleArea h3 {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #6f6f6f;
+    font: 600 10px "Open Sans",sans-serif;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 5px auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+}
+.titleArea p {
+    color: #8f8f8f;
+    font: 11px 맑은 고딕;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 1000px;
+}
+.titleArea ul {
+    margin: 16px 0 0;
+}
+.titleArea ul li {
+    color: #8f8f8f;
+    padding: 0;
+}
+.titleArea ul strong {
+    color: #f26522;
+}
+.detail_page {
+    background: none repeat scroll 0 0 #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 1000px;
+}

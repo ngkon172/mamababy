@@ -1,0 +1,1903 @@
+
+.displaynone {
+    display: none !important;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.clear_both {
+    clear: both;
+}
+.space {
+    clear: both;
+    height: 10px;
+}
+.space2 {
+    clear: both;
+    height: 5px;
+}
+.list_list {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cfcfcf -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 100%;
+}
+.list_list th div {
+    white-space: nowrap;
+}
+.list_list tr.bg0 {
+    background: none repeat scroll 0 0 #fff;
+}
+.list_list tr.bg1 {
+    background: none repeat scroll 0 0 #f8f8f8;
+}
+.list_list th, .list_list td {
+    border: 0 none;
+    padding: 5px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+.list_list th {
+    background: none repeat scroll 0 0 #f4f4f4;
+}
+.list_list tbody th {
+    border-bottom: 1px solid #e5e5e5;
+}
+.list_list td {
+    border-bottom: 1px solid #f0f0f0;
+}
+.list_list th.button, .colTable th.button, .crossTable th.button {
+    text-align: right;
+}
+.list_list td.alert, .colTable td.alert, .crossTable td.alert {
+    color: red !important;
+}
+.list_list td.alert a, .colTable td.alert a, .crossTable td.alert a {
+    color: red !important;
+    text-decoration: none;
+}
+.tableRow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cfcfcf -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 100%;
+}
+.tableRow th div {
+    white-space: nowrap;
+}
+.tableRow tr.bg0 {
+    background: none repeat scroll 0 0 #fff;
+}
+.tableRow tr.bg1 {
+    background: none repeat scroll 0 0 #f8f8f8;
+}
+.tableRow th, .tableRow td {
+    border: 0 none;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.tableRow th {
+    background: none repeat scroll 0 0 #f4f4f4;
+    padding-left: 20px;
+    text-align: left;
+}
+.tableRow tbody th {
+    border-bottom: 1px solid #e5e5e5;
+}
+.tableRow td {
+    border-bottom: 1px solid #f0f0f0;
+}
+.tableRow th.button, .colTable th.button, .crossTable th.button {
+    text-align: right;
+}
+.tableRow td.alert, .colTable td.alert, .crossTable td.alert {
+    color: red !important;
+}
+.tableRow td.alert a, .colTable td.alert a, .crossTable td.alert a {
+    color: red !important;
+    text-decoration: none;
+}
+.board_pagination {
+    margin: 15px auto 0;
+    text-align: center;
+}
+.board_comment_list textarea, .board_comment_write textarea {
+    font-size: 12px;
+    width: 90%;
+}
+.board_comment_list .comment_lists {
+    border-bottom: 1px solid #e8e8e8;
+    height: 25px;
+    padding-top: 10px;
+}
+.displaynone {
+    display: none;
+}
+.board_pagination .current {
+    color: #cc0000;
+    font-weight: bold;
+}
+.table01 {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.ipInfo {
+    text-align: right;
+    width: 100%;
+}
+.xans-board-title .title {
+    margin: 0 0 15px;
+}
+.xans-board-title .title h2 {
+    color: #272823;
+    font: 12px verdana,굴림;
+}
+.xans-board-title .title p {
+    color: #8f8f8f;
+    font: 11px/140% verdana,돋움;
+    padding: 10px 0 0;
+}
+.xans-board-read .boardView table {
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    table-layout: fixed;
+}
+.xans-board-read table th {
+    border-top: 1px solid #dbdad8;
+    font: 10px verdana;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 110px;
+}
+.xans-board-read table td {
+    border-top: 1px solid #dbdad8;
+    font: 10px verdana;
+    padding: 0 15px;
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+}
+.xans-board-read table td span.kor {
+    font: 12px verdana,굴림;
+}
+.xans-board-read table td span.kor_t {
+    font: 11px verdana,돋움;
+}
+.xans-board-read table td span.kor a {
+    font: 11px verdana,돋움;
+}
+.xans-board-read table td img {
+    vertical-align: middle;
+}
+.xans-board-read table a {
+    text-decoration: none;
+}
+.xans-board-read table tr.view td {
+    border: 0 none;
+    line-height: 140%;
+    padding: 0;
+}
+.xans-board-read table tr.view .detail {
+    border-top: 1px solid #dbdad8;
+    font: 12px/20px verdana,굴림;
+    padding: 20px;
+    position: relative;
+    word-break: break-all;
+    z-index: 2;
+}
+.xans-board-read table tr.view ol, .xans-board-read table tr.view ul {
+    margin: 15px 0;
+    padding: 0 0 0 40px;
+}
+.xans-board-read table tr.view ol li {
+    list-style: outside none decimal;
+}
+.xans-board-read table tr.view ul li {
+    list-style: outside none disc;
+}
+.xans-board-read table tr.etcArea {
+}
+.xans-board-read table tr.etcArea td {
+    border: 0 none;
+    padding: 0;
+}
+.xans-board-read table tr.etcArea ul {
+    border-top: 1px solid #dbdad8;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.xans-board-read table tr.etcArea ul li {
+    float: left;
+}
+.xans-board-read table tr.etcArea ul .th {
+    float: left;
+    font: 10px verdana;
+    padding: 15px 10px 10px 15px;
+    text-align: center;
+    width: 110px;
+}
+.xans-board-read table tr.etcArea ul .td {
+    float: left;
+    font: 9px tahoma;
+    padding: 15px 10px 10px 20px;
+    width: 80px;
+}
+.xans-board-read table tr.etcArea ul .td img {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.xans-board-read table tr.etcArea ul li.recom .td {
+    width: 80px;
+}
+.xans-board-read table tr.etcArea ul li.hit .td {
+    width: 80px;
+}
+.xans-board-read table tr.etcArea ul li.grade .td {
+    width: 80px;
+}
+.xans-board-read table tr.attach {
+}
+.xans-board-read table tr.attach a {
+    background: url("/web/upload/romi/icon/ico_attach1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #8f8f8f;
+    padding: 0 0 0 12px;
+}
+.xans-board-read table tr.attach a:hover {
+    text-decoration: underline;
+}
+.xans-board-read table .info {
+    color: #adadad;
+    font: 11px verdana,돋움;
+    margin: 0 0 0 5px;
+}
+.xans-board-read table input {
+    height: 14px;
+    padding: 3px;
+}
+.xans-board-read table input[type="radio"] {
+    border: 0 solid #d9d9d9;
+    font: 11px 돋움;
+    padding: 3px;
+}
+.xans-board-read .btnArea {
+    font-size: 1%;
+    line-height: 1%;
+    margin: 10px 0 60px;
+    overflow: hidden;
+    text-align: right;
+}
+.xans-board-read .btnArea.miniType {
+    margin-bottom: 10px;
+}
+.xans-board-read .btnArea.center {
+    text-align: center;
+}
+.xans-board-read .btnArea img {
+    cursor: pointer;
+    font: 12px/18px verdana,굴림;
+    margin: 0 0 0 1px;
+}
+.xans-board-read .btnArea span.left {
+    float: left;
+    margin: 0 0 0 -1px;
+}
+.xans-board-product {
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    margin: 0 0 20px;
+    overflow: hidden;
+    padding: 15px 50px;
+}
+.xans-board-product .prdThumb {
+    float: left;
+    text-align: left;
+    width: 450px;
+}
+.xans-board-product .prdThumb img {
+    width: 100px;
+}
+.xans-board-product .prdInfo {
+    float: right;
+    padding: 5px 0 0;
+    text-align: right;
+    vertical-align: bottom;
+    width: 450px;
+}
+.xans-board-product .prdInfo h3 {
+    font: 12px verdana,굴림;
+    margin: 5px 3px 0 0;
+}
+.xans-board-product .prdInfo h3 img {
+    vertical-align: middle;
+}
+.xans-board-product .prdInfo p {
+    color: #999;
+    font: 12px verdana,굴림;
+    margin: 5px 3px 0;
+}
+.xans-board-commentlist .boardComment {
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+}
+.xans-board-commentlist .boardComment li {
+    border-top: 1px dotted #c7c7c7;
+    color: #595959;
+    line-height: 140%;
+    overflow: hidden;
+    padding: 10px 20px;
+    position: relative;
+    text-align: left;
+}
+.xans-board-commentlist .boardComment li.first {
+    border: 0 none;
+}
+.xans-board-commentlist .boardComment li .name {
+    font: bold 11px 돋움;
+    margin: 0 10px 0 0;
+}
+.xans-board-commentlist .boardComment li .name input {
+    height: 13px;
+    margin: 0 2px 0 0;
+    vertical-align: -2px;
+    width: 13px;
+}
+.xans-board-commentlist .boardComment li .name a {
+    color: #595959;
+}
+.xans-board-commentlist .boardComment li .date {
+    color: #8f8f8f;
+    font: 9px tahoma;
+    margin: 0 10px 0 0;
+}
+.xans-board-commentlist .boardComment li .grade {
+    margin: 0 10px 0 0;
+}
+.xans-board-commentlist .boardComment li .button {
+}
+.xans-board-commentlist .boardComment li .button a {
+    margin: 0;
+}
+.xans-board-commentlist .boardComment li .comment {
+    margin: 5px 0 0;
+    word-break: break-all;
+}
+.xans-board-commentlist .btnArea {
+    font-size: 1%;
+    line-height: 1%;
+    margin: 10px 0;
+    text-align: right;
+}
+.xans-board-commentlist .btnArea img {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 0 0 1px;
+}
+.xans-board-commentpaging {
+    clear: both;
+    margin: 10px 0;
+    text-align: center;
+}
+.xans-board-commentpaging p, .xans-board-commentpaging ol, .xans-board-commentpaging li {
+    display: inline;
+}
+.xans-board-commentpaging img {
+    vertical-align: top;
+}
+.xans-board-commentpaging p {
+    margin-right: -3px;
+}
+.xans-board-commentpaging ol {
+    margin: 0 17px 0 20px;
+}
+.xans-board-commentpaging li {
+    font-family: tahoma,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 4px;
+}
+.xans-board-commentpaging li a {
+    color: #7c7b7b;
+}
+.xans-board-commentpaging li a:hover {
+    text-decoration: underline;
+}
+.xans-board-commentpaging li a.this {
+    color: #fd5c40;
+}
+.xans-board-commentpaging a.nolink {
+    cursor: default;
+}
+.xans-board-commentwrite {
+    background: none repeat scroll 0 0 #fbfbfb;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    font: 11px 돋움;
+    margin: 10px 0;
+    padding: 20px 50px;
+}
+.xans-board-commentwrite legend {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.xans-board-commentwrite p {
+    margin: 10px 0 0;
+}
+.xans-board-commentwrite strong {
+    display: inline-block;
+    width: 100px;
+}
+.xans-board-commentwrite input, .xans-board-commentwrite textarea {
+    padding: 3px;
+}
+.xans-board-commentwrite input {
+    height: 14px;
+    margin: 0 10px 0 9px;
+    width: 84px;
+}
+.xans-board-commentwrite textarea {
+    height: 44px;
+    width: 800px;
+}
+.xans-board-commentwrite p.grade input {
+    border: 0 none;
+    height: 13px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    vertical-align: -2px;
+    width: 13px;
+}
+.xans-board-commentwrite p.grade label {
+    padding: 0 10px 0 0;
+}
+.xans-board-commentwrite p.grade em {
+    font-style: normal;
+}
+.xans-board-commentwrite #attendCommentBtnWrap input {
+    border: medium none !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+.xans-board-commentreply {
+    background: none repeat scroll 0 0 #fbfbfb;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    font: 11px 돋움;
+    margin: 10px 0;
+    padding: 20px 50px;
+}
+.xans-board-commentreply legend {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.xans-board-commentreply p {
+    margin: 10px 0 0;
+}
+.xans-board-commentreply strong {
+    display: inline-block;
+    width: 100px;
+}
+.xans-board-commentreply input, .xans-board-commentreply textarea {
+    padding: 3px;
+}
+.xans-board-commentreply input {
+    height: 14px;
+    margin: 0 10px 0 9px;
+    width: 84px;
+}
+.xans-board-commentreply textarea {
+    height: 44px;
+    width: 750px;
+}
+.xans-board-commentreply p.grade input {
+    border: 0 none;
+    height: 13px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    vertical-align: -2px;
+    width: 13px;
+}
+.xans-board-commentreply p.grade label {
+    padding: 0 10px 0 0;
+}
+.xans-board-commentreply p.grade em {
+    font-style: normal;
+}
+.xans-board-commentreply #attendCommentBtnWrap input {
+    border: medium none !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+.xans-board-commentform {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    font: 11px 돋움;
+    margin: 10px 0;
+    padding: 20px 50px;
+}
+.xans-board-commentform legend {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.xans-board-commentform p {
+    margin: 10px 0 0;
+}
+.xans-board-commentform input, .xans-board-commentform textarea {
+    padding: 3px;
+}
+.xans-board-commentform input {
+    height: 14px;
+    margin: 0 10px 0 9px;
+    width: 84px;
+}
+.xans-board-commentform textarea {
+    height: 44px;
+    width: 720px;
+}
+.xans-board-commentform #attendCommentBtnWrap input {
+    border: medium none !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+.xans-board-commentform img {
+    margin: 0;
+}
+.xans-board-commentlist .boardComment li.replyArea {
+    background: url("/web/upload/romi/icon/ico_reply.gif") no-repeat scroll 20px 15px rgba(0, 0, 0, 0);
+    padding-left: 40px;
+}
+.xans-board-commentlist .boardComment li.first.replyArea {
+    border-top: 1px dotted #c7c7c7;
+}
+.replyArea .xans-board-commentform textarea {
+    width: 523px;
+}
+.xans-board-commentwrite-11 textarea {
+    width: 623px;
+}
+.romi_paging {
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+}
+.romi_paging p, .romi_paging ol, .romi_paging li {
+    display: inline;
+}
+.romi_paging img {
+    vertical-align: middle;
+}
+.romi_paging p {
+    margin: 0;
+}
+.romi_paging ol {
+    margin: 0 10px;
+}
+.romi_paging li {
+    font: 10px "verdana",serif;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.romi_paging li strong {
+    color: #555;
+    font: 10px "verdana",serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+.romi_paging li a {
+    color: #999;
+}
+.romi_paging li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.romi_paging li a.this {
+    color: #b24646;
+}
+.romi_paging a.nolink {
+    cursor: default;
+}
+.xans-board-movement {
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    margin: 60px 0;
+}
+.xans-board-movement li {
+    border-bottom: 1px dotted #c7c7c7;
+    line-height: 140%;
+    overflow: hidden;
+    padding: 11px 20px;
+}
+.xans-board-movement li strong {
+    background: url("/web/upload/romi/icon/ico_move_prev.gif") no-repeat scroll 41px 5px rgba(0, 0, 0, 0);
+    color: #8f8f8f;
+    float: left;
+    font: 11px verdana,돋움;
+    width: 10%;
+}
+.xans-board-movement li a {
+    color: #8f8f8f;
+    float: left;
+    width: 89%;
+}
+.xans-board-movement li.next {
+    border: 0 none;
+}
+.xans-board-movement li.next a {
+}
+.xans-board-movement li.next strong {
+    background: url("/web/upload/romi/icon/ico_move_next.gif") no-repeat scroll 41px 6px rgba(0, 0, 0, 0);
+}
+.xans-board-listsgroup {
+    margin: 0 0 60px;
+}
+.xans-board-listsgroup h3 {
+    color: #444;
+    font: 12px verdana,굴림;
+    margin: 0 0 10px;
+}
+.xans-board-listsgroup table {
+    border-bottom: 1px solid #dbdad8;
+    color: #8f8f8f;
+    font: 11px verdana,돋움;
+}
+.xans-board-listsgroup table th {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #dbdad8;
+    border-top: 1px solid #dbdad8;
+    font: 9px/14px verdana;
+    padding: 9px 0 7px;
+    vertical-align: middle;
+}
+.xans-board-listsgroup table td {
+    border-top: 1px dotted #e3e3e3;
+    line-height: 140%;
+    padding: 11px 0 9px;
+    text-align: center;
+    vertical-align: middle;
+}
+.xans-board-listsgroup table a, .xans-board-listsgroup table a:hover {
+}
+.xans-board-listsgroup table td.subject {
+    font: 12px verdana,굴림;
+    text-align: left;
+    text-indent: 5px;
+    word-break: break-all;
+}
+.xans-board-listsgroup table .subject img {
+    margin: 0 1px;
+    vertical-align: middle;
+}
+.xans-board-listsgroup table .number {
+    font: 9px tahoma;
+    width: 80px;
+}
+.xans-board-listsgroup table .category {
+    width: 104px;
+}
+.xans-board-listsgroup table .name {
+    width: 84px;
+}
+.xans-board-listsgroup table .date {
+    font: 9px tahoma;
+    width: 74px;
+}
+.xans-board-listsgroup table .hit {
+    font: 9px tahoma;
+    width: 45px;
+}
+.xans-board-listsgroup table .grade {
+    width: 60px;
+}
+.xans-board-listsgroup table .writer {
+    width: 84px;
+}
+.xans-board-listsgroup table .recom {
+    width: 45px;
+}
+.xans-board-listsgroup table .thumb {
+    width: 150px;
+}
+.xans-board-listsgroup table td.thumb {
+    font: 11px/15px verdana,돋움;
+    letter-spacing: -1px;
+}
+.xans-board-function {
+    background: none repeat scroll 0 0 #f5f5f5;
+    color: #8b8b8b;
+    font: 11px verdana,돋움;
+    margin: 0;
+    padding: 15px 16px;
+}
+.xans-board-function p {
+    background: url("/web/upload/romi/icon/ico_function.gif") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
+    padding: 0 0 0 7px;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body, code {
+    background: none repeat scroll 0 0 #fff;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+}
+body#popup {
+    min-width: 0;
+}
+li {
+    list-style: outside none none;
+}
+img, fieldset {
+    border: medium none;
+    vertical-align: top;
+}
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+caption {
+    display: none;
+}
+th, td {
+    border: 0 none;
+    font: 12px verdana,"굴림";
+    vertical-align: top;
+}
+input, select, textarea {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 12px verdana,"굴림",Dotum,sans-serif;
+    padding: 0;
+    vertical-align: middle;
+}
+input[type="radio"], input[type="checkbox"], input[type="image"] {
+    border: 0 none;
+}
+input[type="button"] {
+}
+select {
+    border: 1px solid #ddd;
+    color: #555;
+    font: 11px verdana,"돋움",Dotum,sans-serif;
+    height: 24px;
+}
+legend {
+    height: 0;
+    left: -9999px;
+    line-height: 0;
+    position: absolute;
+    top: -9999px;
+    visibility: hidden;
+    width: 0;
+}
+button {
+    border: 0 none;
+    cursor: pointer;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+}
+hr.layout {
+    display: none;
+}
+a {
+    color: #555;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #ce9375;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+.objHidden {
+    height: 0;
+    left: -1000px;
+    position: absolute;
+    top: -1000px;
+    visibility: hidden;
+    width: 0;
+}
+table tr.radioType input, span.noBorder input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: medium none !important;
+    height: auto !important;
+    margin: 0 3px 0 0 !important;
+    vertical-align: middle !important;
+    width: auto !important;
+}
+#content_CONTAINER td {
+    width: auto !important;
+}
+table.nneditor-table {
+    width: auto !important;
+}
+#progressPaybarBackground {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+#progressPaybarView {
+    font-size: 12px;
+    left: 20px;
+    position: absolute;
+    top: 160px;
+    width: 471px;
+    z-index: 100;
+}
+#progressPaybarView .box {
+    background: url("http://img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 180px;
+}
+#progressPaybarView .box .graph {
+    padding: 15px 0 0;
+    text-align: center;
+}
+#progressPaybarView .box .graph span {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+}
+#progressPaybarView .box .txt {
+    color: #555555;
+    padding: 15px 0 0;
+    text-align: center;
+}
+div.layerProgress {
+    background-color: #999;
+    opacity: 0.4;
+}
+#accNav {
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#accNav p, #accNav ul, #accNav ul li {
+    height: 0;
+}
+#accNav p a {
+    color: #000;
+    display: block;
+    height: 1px;
+    left: 0;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 1px;
+}
+#accNav p a:focus, #accNav p a:hover, #accNav p a:active {
+    background: none repeat scroll 0 0 #c4122f;
+    color: #fff;
+    height: auto;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 100;
+}
+.displaynone {
+    display: none;
+}
+body {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    margin: 0 auto;
+    position: relative;
+    right: 30px;
+    width: 1150px;
+}
+#header_st1 {
+    border-bottom: 1px solid #e9e9e9;
+    margin: 0 auto;
+    position: relative;
+    width: 1150px;
+}
+#header_st1_top {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    height: 20px;
+    padding: 10px 0;
+    position: relative;
+    width: 1150px;
+}
+#header_st1_bottom {
+    height: 150px;
+    padding: 10px 0;
+    position: relative;
+    width: 1150px;
+}
+#header_st1:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#header_st1 .link {
+    border-left: 1px solid #e3e4e5;
+    display: none;
+    font-size: 11px;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#header_st1 .link a {
+    border-right: 1px solid #e3e4e5;
+    color: #a6a6a6;
+    float: left;
+    height: 20px;
+    padding: 9px 8px 0 9px;
+}
+#header_st1 .link a:hover {
+    text-decoration: none;
+}
+#header_st2 {
+    border-bottom: 1px solid #e9e9e9;
+    margin: 0 auto;
+    position: relative;
+    width: 1150px;
+}
+#header_st2_top {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    height: 20px;
+    padding: 10px 0;
+    position: relative;
+    width: 1150px;
+}
+#header_st2_bottom {
+    height: 150px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    width: 1150px;
+}
+#header_st2:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#header_st2 .link {
+    border-left: 1px solid #e3e4e5;
+    display: none;
+    font-size: 11px;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#header_st2 .link a {
+    border-right: 1px solid #e3e4e5;
+    color: #a6a6a6;
+    float: left;
+    height: 20px;
+    padding: 9px 8px 0 9px;
+}
+#header_st2 .link a:hover {
+    text-decoration: none;
+}
+.icon_wrap {
+    bottom: 45px;
+    height: 11px;
+    position: absolute;
+    right: 241px;
+    text-align: center;
+    width: 100px;
+}
+.icon_wrap #rm_join {
+    background: url("/web/upload/romi/top_st2/join_bg.gif") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    height: 19px;
+    margin: 0;
+}
+.icon_wrap #rm_join span {
+    background: none repeat scroll 0 0 #f9a9a1;
+    border: 1px solid #f9a9a1;
+    border-radius: 5px;
+    color: #fff;
+    font: 11px 돋움,굴림;
+    padding: 3px 5px 0;
+    text-align: center;
+}
+#container:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#container #snb {
+    border-bottom: 1px solid #e9e9e9;
+    height: 41px;
+    margin: 0 0 10px;
+    position: relative;
+    width: 1150px;
+    z-index: 99;
+}
+#container #contents {
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 0 0 20px;
+    position: relative;
+    width: 1150px;
+}
+#romi_main {
+    height: 470px;
+    margin: 0 auto;
+    padding: 0 0 10px;
+    width: 1150px;
+}
+.romi_main_banner {
+    border: 0 none;
+    float: right;
+    height: 395px;
+    margin: 0 0 5px;
+    width: 300px;
+}
+.romi_main_banner ul {
+    width: 300px;
+}
+.romi_main_banner ul li.toptop {
+    float: left;
+    height: 95px;
+    margin: 0 0 5px;
+    text-align: left;
+    width: 300px;
+}
+.romi_main_banner ul li.left {
+    float: left;
+    height: 145px;
+    margin: 0 0 5px;
+    text-align: left;
+    width: 150px;
+}
+.romi_main_banner ul li.right {
+    float: right;
+    height: 145px;
+    margin: 0 0 5px;
+    text-align: right;
+    width: 150px;
+}
+#romi_main_notice {
+    border: 0 none;
+    float: right;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+span.romi_eng {
+    font: 10px verdana;
+}
+span.romi_kor {
+    font: 12px verdana,굴림;
+}
+span.romi_date {
+    font: 9px tahoma;
+}
+#footer {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1150px;
+}
+#banner {
+    left: 0;
+    min-height: 200px;
+    position: absolute;
+    top: 100px;
+    width: 100px;
+}
+#quick {
+    position: absolute;
+    right: -80px;
+    top: 210px;
+    width: 60px;
+}
+#boardArea {
+    margin: 30px 0;
+    overflow: hidden;
+}
+.mainBoard p {
+    margin: 10px 0 0;
+}
+.mainBoard thead {
+    height: 0;
+    left: -1000px;
+    position: absolute;
+    top: -1000px;
+    visibility: hidden;
+    width: 0;
+}
+.mainBoard td {
+    border: medium none;
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+.mainBoard td.title a, .mainBoard td.title a:hover {
+    color: #8f8f91;
+    text-decoration: underline;
+}
+#board2nd {
+    float: right;
+    width: 270px;
+}
+#board2nd h2 {
+    border-bottom: 1px solid #dedcdc;
+    height: 20px;
+    margin: 0 0 20px;
+}
+#board3rd td {
+    display: none;
+}
+#board3rd td.title {
+    display: block;
+    width: auto;
+}
+.linkOn {
+    border-right: 1px solid #e3e4e5;
+    color: #8f8f91;
+    float: left;
+    height: 20px;
+    padding: 9px 8px 0 9px;
+}
+.linkOn img {
+    margin: -1px 0 0;
+    vertical-align: top;
+}
+.linkOn strong {
+    font-family: Verdana,sans-serif;
+    font-size: 10px;
+}
+.linkOn .on {
+    color: #80a3d7;
+}
+.linkOn .off {
+    color: #8f8f91;
+}
+.path {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.path h3 {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 0;
+}
+.path ol {
+    float: right;
+}
+.path li {
+    background: url("http://img.echosting.cafe24.com/design/skin/default/common/ico_path.gif") no-repeat scroll 0 9px rgba(0, 0, 0, 0);
+    float: left;
+    font-size: 11px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 10px;
+}
+.path li.displaynone {
+    display: none;
+}
+.path li.first {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.path li strong {
+    font-weight: normal;
+}
+.titleArea {
+    margin: 10px 0 0;
+}
+.titleArea h2 {
+    color: #444;
+    font: bold 12px 맑은 고딕,돋움,굴림;
+    padding: 5px 0 5px 3px;
+}
+.titleArea h3 {
+    color: #444;
+    font: 11px 맑은 고딕,돋움,굴림;
+    padding: 5px 0;
+}
+.titleArea p {
+    color: #888;
+    font: 11px verdana,돋움;
+    margin: 3px 0 10px 3px;
+}
+.titleArea ul {
+    margin: 15px 0 0;
+}
+.titleArea ul li {
+    background: url("http://img.echosting.cafe24.com/design/skin/default/common/ico_help.gif") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    color: #888;
+    font: 11px/140% verdana,돋움;
+    padding: 0 0 0 10px;
+}
+.titleArea ul strong {
+    color: #333;
+}
+#banners {
+    margin: 30px 0 0;
+    overflow: hidden;
+}
+#banners p img {
+    display: block;
+}
+.utilBanner {
+    margin: 25px 0 0;
+}
+.help {
+    margin: 30px 0 0;
+}
+.help h3 {
+    color: #444;
+    font: bold 11px 맑은 고딕,돋움,굴림;
+    padding: 20px 0 10px;
+}
+.help li {
+    color: #8b8b8c;
+    font: 11px/18px verdana,돋움;
+    padding: 0;
+    text-indent: 10px;
+}
+.help strong {
+    color: #f26522;
+}
+.help a, .help a:hover {
+    color: #8b8b8c;
+}
+.sort {
+    margin: 20px 0;
+    overflow: hidden;
+}
+.sort p.icon {
+    float: right;
+    text-align: right;
+}
+.guideArea h3 {
+    color: #555;
+    font: bold 12px 맑은 고딕,돋움,굴림;
+    margin: 0 0 5px;
+}
+.guide {
+    border: 1px solid #eee;
+    line-height: 20px;
+    padding: 30px;
+}
+.guide h3, .guide h4 {
+    color: #555;
+    font: bold 12px 맑은 고딕,돋움,굴림;
+    margin: 10px 0 7px;
+}
+.guide ul:first-child {
+    margin: 13px 0 0;
+}
+.guide li, .guide p {
+    color: #848484;
+    font: 11px/20px verdana,돋움;
+    text-indent: 10px;
+}
+.guide a {
+    color: #747474;
+}
+.boardMain {
+    overflow: hidden;
+}
+.boardMain img {
+    margin: 1px;
+    vertical-align: middle;
+}
+.boardMain .leftArea {
+    float: left;
+    width: 49.4%;
+}
+.boardMain .rightArea {
+    float: right;
+    width: 49.4%;
+}
+.romi_titleArea {
+    clear: both;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 1000px;
+}
+.romi_titleArea img {
+}
+.romi_titleArea h2 {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #6f6f6f;
+    font: 600 10px "Open Sans",sans-serif;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+}
+.romi_titleArea h3 {
+    background: url("/web/upload/romi/bg/top_bg.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #6f6f6f;
+    font: 600 10px "Open Sans",sans-serif;
+    height: 17px;
+    letter-spacing: 5px;
+    margin: 5px auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+}
+.romi_titleArea p {
+    color: #8f8f8f;
+    font: 11px 맑은 고딕;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 1000px;
+}
+.romi_titleArea ul {
+    margin: 16px 0 0;
+}
+.romi_titleArea ul li {
+    color: #8f8f8f;
+    padding: 0;
+}
+.romi_titleArea ul strong {
+    color: #f26522;
+}
+.romi_imgArea {
+    display: none;
+    padding: 0;
+    position: relative;
+}
+.romi_imgArea p {
+    padding: 0;
+}
+.romi_imgArea p.imgArea {
+    padding: 0 0 20px;
+}
+.romi_imgArea p.imgArea img {
+    display: block;
+    margin: 0 auto;
+}
+.romi_path {
+    color: #999;
+    font: 300 10px "Open Sans",sans-serif;
+    height: 13px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 1000px;
+}
+.romi_path h3 {
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 0;
+}
+.romi_path ol {
+    float: right;
+    padding: 0;
+}
+.romi_path li {
+    background: url("/web/upload/romi/paging/btn_page_next.png") no-repeat scroll 0 1px rgba(0, 0, 0, 0);
+    float: left;
+    margin: 0;
+    padding: 0 0 0 16px;
+}
+.romi_path li a {
+    color: #ccc;
+}
+.romi_path li a:hover {
+    color: #e88e74;
+}
+.romi_path li.displaynone {
+    display: none;
+}
+.romi_path li.first {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.romi_path li strong {
+    color: #999;
+}
+.romi_detail_page {
+    background: none repeat scroll 0 0 #fff;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 1000px;
+}
+.tt {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 5px 2px 1px;
+}
+.t {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 5px 10px 1px;
+}
+.s {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 8px 15px 4px;
+}
+.m {
+    cursor: pointer;
+    display: inline-block;
+    font: 11px 돋움;
+    letter-spacing: -1px;
+    margin: 0 1px;
+    padding: 9px 18px 5px;
+}
+.b {
+    cursor: pointer;
+    display: inline-block;
+    font: 12px 굴림;
+    letter-spacing: 0;
+    margin: 0 1px;
+    padding: 15px 20px 11px;
+    text-align: center;
+}
+.romi_btn {
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #f7f7f7;
+    margin: 1px;
+}
+.gray {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid #e4e2e0;
+    color: #414141;
+}
+.white {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e4e2e0;
+    color: #414141;
+}
+.color {
+    background: none repeat scroll 0 0 #fffdf8;
+    border: 1px solid #ece6d6;
+    color: #414141;
+}
+.gray:hover, .white:hover, .color:hover {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #807e7c;
+    color: #414141;
+}
+.gray:active, .white:active, .color:active {
+    background: none repeat scroll 0 0 #626262;
+    border: 1px solid #b7b6b2;
+    color: #fff;
+}
+.xans-layout-statelogoff {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    padding: 0;
+    text-align: right;
+    width: 500px;
+}
+.xans-layout-statelogoff a {
+    display: inline-block;
+    float: left;
+}
+.xans-layout-statelogon {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    padding: 0;
+    text-align: right;
+    width: 500px;
+}
+.xans-layout-statelogon a {
+    display: inline-block;
+    float: left;
+}
+.xans-layout-searchheader {
+    border-bottom: 1px solid #e5e5e5;
+    float: right;
+    height: 15px;
+    margin: 2px 5px 0;
+    padding: 0;
+    width: 210px;
+}
+.xans-layout-searchheader:after {
+    clear: both;
+    content: "";
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.xans-layout-searchheader img {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.xans-layout-searchheader fieldset {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+}
+.xans-layout-searchheader input {
+    border: 0 none;
+    float: left;
+}
+.xans-layout-searchheader input[type="text"] {
+    color: #888;
+    float: left;
+    font: 11px "돋움";
+    height: 15px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+.xans-layout-searchheader img.btn_search {
+    cursor: pointer;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 30px;
+}
+.xans-layout-logotop {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 500px;
+}
+.xans-layout-logotop img {
+    padding: 20px 0;
+}
+.xans-layout-category {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    width: 700px;
+}
+.xans-layout-category .postion {
+}
+.xans-layout-category ul {
+    display: inline-block;
+    margin: 0 0 0 -5px;
+}
+.xans-layout-category li {
+    background: url("/web/upload/romi/category/cate_bg.png") no-repeat scroll 0 8px rgba(0, 0, 0, 0);
+    float: left;
+    padding: 8px 0;
+    position: relative;
+    z-index: 99;
+}
+.xans-layout-category li:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.xans-layout-category li a {
+    color: #797978;
+    display: block;
+    font: 600 10px "Open Sans",sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.xans-layout-category li.on > a, .xans-layout-category li a:hover {
+    color: #fccc00;
+}
+.xans-layout-category li a img {
+    float: left;
+    padding: 0 10px;
+}
+.xans-layout-category .sub-category {
+    background: url("/web/upload/romi/category/sub_bg.png") no-repeat scroll center top #fff;
+    height: auto;
+    left: 7px;
+    position: absolute;
+    top: 37px;
+    width: 130px;
+    z-index: 90;
+}
+.xans-layout-category .sub-category ul {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    display: block;
+    height: auto;
+    margin: 5px 0 0;
+    padding: 5px 0 3px;
+}
+.xans-layout-category .sub-category li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px dotted #e9e9e9;
+    float: none;
+    font: 11px 돋움;
+    margin: 0 5px;
+    padding: 2px 0;
+    position: static;
+}
+.xans-layout-category .sub-category li:last-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+}
+.xans-layout-category .sub-category li a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font: 11px/150% 돋움;
+    letter-spacing: -0.7px;
+    padding: 4px 3px 2px;
+    text-align: left;
+    width: auto;
+}
+.xans-layout-category .sub-category li a:hover {
+    background: none repeat scroll 0 0 #f5f5f5;
+    color: #010100;
+}
+.xans-layout-boardinfo {
+    background: none repeat scroll 0 0 #fff;
+    float: right;
+    text-align: right;
+    width: 450px;
+}
+.xans-layout-boardinfo ul {
+    display: inline-block;
+    float: right;
+    margin: 0 -5px 0 0;
+}
+.xans-layout-boardinfo li {
+    background: url("/web/upload/romi/category/cate_bg.png") no-repeat scroll 0 8px rgba(0, 0, 0, 0);
+    float: left;
+    padding: 8px 0;
+    position: relative;
+    z-index: 99;
+}
+.xans-layout-boardinfo li:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.xans-layout-boardinfo li a img {
+    float: left;
+    padding: 0 5px;
+}
+.xans-layout-bottom {
+    margin: 0 auto;
+    text-align: center;
+    width: 1150px;
+}
+.xans-layout-bottom .bottom_info {
+    border-top: 3px double #ededed;
+    height: 90px;
+    padding: 20px 0 23px;
+    text-align: center;
+    width: 1150px;
+}
+.xans-layout-bottom .bottom_info span {
+    display: inline-block;
+    float: left;
+}
+.xans-layout-bottom .bottom_info span.info {
+    padding: 0 0 0 18px;
+    width: 920px;
+}
+.xans-layout-bottom .bottom_info span a {
+    float: left;
+    height: 76px;
+    padding: 7px 0 7px 18px;
+}
+.xans-layout-bottom .bottom_info span a:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.xans-layout-footer {
+    margin: 0 auto;
+    text-align: center;
+    width: 1150px;
+}
+.xans-layout-footer .utilcompany {
+    border-top: 3px double #ededed;
+    height: 16px;
+    padding: 10px 0;
+    text-align: center;
+    width: 1150px;
+}
+.xans-layout-footer .utilcompany span {
+    display: inline-block;
+    margin: 0 auto;
+}
+.xans-layout-footer .utilcompany span a {
+    background: url("/web/upload/romi/company/com_bg.png") no-repeat scroll 0 1px rgba(0, 0, 0, 0);
+    float: left;
+    height: 16px;
+    padding: 0 10px;
+}
+.xans-layout-footer .utilcompany span a:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.xans-layout-footer .address {
+    border-top: 1px solid #ededed;
+    color: #848280;
+    font: 11px/20px verdana,돋움;
+    letter-spacing: -0.3px;
+    padding: 20px 0 0;
+}
+.xans-layout-footer .address span {
+    padding: 0 7px 0 0;
+}
+.xans-layout-footer .address span strong {
+    color: #a7a89f;
+    font: 600 10px "Open Sans",sans-serif;
+    letter-spacing: 0.5px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.xans-layout-footer .address span var {
+    color: #c5c5c5;
+    font: 9px tahoma;
+    letter-spacing: 0.5px;
+    padding: 0;
+    text-transform: none;
+}
+.xans-layout-footer .address span a {
+    color: #b6b5a1;
+    padding: 0;
+}
+.xans-layout-footer .address .copyright {
+    color: #848280;
+    font: 500 10px "Open Sans",sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.xans-layout-footer .address .copyright strong {
+    color: #c2a28e;
+    font: 600 10px "Open Sans",sans-serif;
+    padding: 0 3px;
+    text-transform: uppercase;
+}
+.xans-layout-footer .company_banner {
+    margin: 0 auto;
+    padding: 5px 0 20px;
+    text-align: center;
+    width: 1150px;
+}
+.xans-layout-footer .company_banner p {
+    display: inline-block;
+    margin: 0 auto;
+}
+.xans-layout-footer .company_banner p img {
+    float: left;
+}
+.xans-layout-orderbasketcount {
+    padding: 0;
+}
+.xans-layout-orderbasketcount ul {
+    margin: 0 auto;
+    width: 60px;
+}
+.xans-layout-orderbasketcount li {
+    margin: 0 0 15px;
+}
+.xans-layout-orderbasketcount li img {
+}
+.xans-layout-productrecent {
+    margin: 0;
+}
+.xans-layout-productrecent ul {
+    text-align: left;
+    width: 60px;
+}
+.xans-layout-productrecent li a {
+    display: inline-block;
+}
+.xans-layout-productrecent li img {
+    max-width: 50px;
+    padding: 3px 0;
+}
+.xans-layout-productrecent .player {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2px 0;
+    text-align: center;
+    width: 60px;
+}
+.xans-layout-productrecent .player img {
+    margin: 0 auto;
+}
+.xans-layout-conversionpc a {
+    border: 2px solid #9d9db0;
+    border-radius: 4px;
+    color: #63666e;
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 21px 0 22px;
+    text-align: center;
+}
+.xans-layout-conversionpc a {
+    background: -moz-linear-gradient(center top , #fff, #f2f2f2) repeat scroll 0 0 #fff;
+}
+.xans-layout-conversionpc a:hover {
+    text-decoration: none;
+}
+.xans-layout-conversionpc a span {
+    background: url("http://img.echosting.cafe24.com/design/skin/default/layout/ico_go_mobile.png") no-repeat scroll 0 0 / 27px 35px rgba(0, 0, 0, 0);
+    padding: 0 0 0 42px;
+}
+
+#comment_password{
+    width: 150px;
+    height: 20px;
+}
