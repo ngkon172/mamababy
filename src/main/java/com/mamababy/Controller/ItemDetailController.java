@@ -3,6 +3,8 @@ package com.mamababy.Controller;
 import com.mamababy.domain.repository.ItemRepository;
 import com.mamababy.domain.user.Item;
 import com.mamababy.domain.user.Option;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,8 +27,12 @@ public class ItemDetailController {
     }
     // todo : 모듈화
 
-    @RequestMapping("/itemDetial")
+    @RequestMapping("/itemDetail")
     public ModelAndView getItemDetail(@RequestParam("id") String id, Model model){
+
+        Logger logger = LoggerFactory.getLogger(ModelAndView.class);
+
+        logger.info("get item deail view");
 
         Item item = itemRepository.findById(id);
         model.addAttribute("item", item);
@@ -52,7 +58,7 @@ public class ItemDetailController {
         if(opt2 != null)model.addAttribute("opt2", opt2);
         if(opt3 != null)model.addAttribute("opt3", opt3);
 
-        return new ModelAndView("item_detail_test");
+        return new ModelAndView("/item_detail");
 
     }
 }

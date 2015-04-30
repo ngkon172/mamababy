@@ -31,6 +31,6 @@ public class Application extends SpringBootServletInitializer {
     @RequestMapping("/")
     public String getMain(){
 
-        return "a";
+        return "main";
     }
 }

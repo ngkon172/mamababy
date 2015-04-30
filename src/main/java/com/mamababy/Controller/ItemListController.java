@@ -3,7 +3,9 @@ package com.mamababy.Controller;
 import com.mamababy.domain.repository.ItemRepository;
 import com.mamababy.domain.user.Item;
 import org.apache.log4j.spi.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,11 +17,12 @@ import java.util.List;
  * Created by hoy on 15. 4. 27..
  */
 
-@Contended
+@Controller
 public class ItemListController {
 
 
     private final ItemRepository itemRepository;
+    Logger logger = org.slf4j.LoggerFactory.getLogger(ItemListController.class);
 
     @Autowired
     public ItemListController(ItemRepository itemRepository) {

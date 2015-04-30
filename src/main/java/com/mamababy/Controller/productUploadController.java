@@ -7,6 +7,7 @@ import com.mamababy.domain.user.Item;
 import com.mamababy.domain.user.ItemForm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +32,7 @@ public class productUploadController {
     Logger logger = LoggerFactory.getLogger(productUploadController.class);
 
     private final productRepository productRepository;
-
+    @Autowired
     public productUploadController(com.mamababy.domain.repository.productRepository productRepository) {
         this.productRepository = productRepository;
     }
