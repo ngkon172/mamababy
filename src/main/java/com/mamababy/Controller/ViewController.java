@@ -34,6 +34,9 @@ import java.util.UUID;
 @Controller
 
 public class ViewController {
+
+
+
     private static final Logger logger = LoggerFactory.getLogger(ViewController.class);
 
     private final BbsRepository bbsRepository;
@@ -56,7 +59,7 @@ public class ViewController {
     public String BbsWirte(@RequestParam String cate, Model model){
         logger.info("Display view |bbs Wirte|");
         model.addAttribute("cate", cate);
-        return "wirte";
+        return "write";
     }
 
 
@@ -93,14 +96,14 @@ public class ViewController {
     }
 
 
-    @RequestMapping(value="/wirte_ok", method = RequestMethod.POST)
+    @RequestMapping(value="/write_ok", method = RequestMethod.POST)
     public ModelAndView wirteOk(@ModelAttribute Bbs bbs, BindingResult result, Model model){
         model.addAttribute("bbs", bbs);
         Date date = new Date();
 
         String id = UUID.randomUUID().toString();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String regDate=  sdf.format(sdf).toString();
+        String regDate=  sdf.format(date).toString();
 
         bbs.setRegDate(regDate);
         bbs.setId(id);
@@ -129,7 +132,7 @@ public class ViewController {
 
     }
 
-    @RequestMapping(value = "/read", method = RequestMethod.GET)
+    @RequestMapping(value = "/bbs/read", method = RequestMethod.GET)
     public String getReadVeiw(@RequestParam("id") String id, Model model){
         logger.info("get Read View");
 
@@ -146,7 +149,7 @@ public class ViewController {
 
     // 각 게시판 불러오기  + Pageination.
     @RequestMapping(value="/bbs/{cate}")
-    public String getBoard(@PathVariable("bbs") String cate, @RequestParam("page")int pageNo, Model model){
+    public String getBoard(@PathVariable("cate") String cate, @RequestParam("page")int pageNo, Model model){
 
         int PageNum;
         if(pageNo <0){

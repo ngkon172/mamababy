@@ -7,6 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<head>
+    <link href="/css/test.css" rel="stylesheet" media="screen">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="/css/style.css" />
+    <link href="/css/slideshow.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css"
+          href="fonts/foundation-icons/foundation-icons.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
 <div id="footer">
   <div class="footer_wrapper">
     <div class="footer-top">

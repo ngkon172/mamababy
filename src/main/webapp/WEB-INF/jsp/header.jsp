@@ -30,6 +30,16 @@
       })
   })
 </script>
+<head>
+    <link href="/css/test.css" rel="stylesheet" media="screen">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="/css/style.css" />
+    <link href="/css/slideshow.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css"
+          href="/fonts/foundation-icons/foundation-icons.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
 
 <div id="header_st2">
     <div id="header_st2_bottom">
@@ -42,12 +52,12 @@
     <div class="nav-container">
         <nav id="global-nav">
             <ul class="shop-nav">
-                <li><a id="shop-nav-Mom" href="items?cate1=MOM">Mom</a> </li>
-                <li><a id="shop-nav-Baby" href="items?cate1=BABY">Baby</a> </li>
-                <li><a id="shop-nav-home" href="items?cate1=DRESS">Dress</a> </li>
-                <li><a class="project" href="rent?page=1">Rent</a> </li>
-                <li><a class="project" href="QnA?page=1">QnA</a> </li>
-                <li><a class="project" href="Review?page=1">review</a> </li>
+                <li><a id="shop-nav-Mom" href="/items?cate1=MOM">Mom</a> </li>
+                <li><a id="shop-nav-Baby" href="/items?cate1=BABY">Baby</a> </li>
+                <li><a id="shop-nav-home" class="bar" href="/items?cate1=DRESS">Dress</a> </li>
+                <li><a class="project" href="/bbs/rent?page=1">Rent</a> </li>
+                <li><a class="project" href="/bbs/QnA?page=1">QnA</a> </li>
+                <li><a class="project" href="/bbs/Review?page=1">review</a> </li>
             </ul>
         </nav>
     </div>
@@ -56,8 +66,8 @@
     <ul class="nav">
         <c:choose>
             <c:when test="${sessionScope.user eq null}">
-                <li class="login"><a href="login.html"><i class="step fi-torso size-36"></i><span>로그인</span></a></li>
-                <li class="account"><a href="reg.html"><i class="step fi-pencil size-36"></i><span>회원가입</span></a></li>
+                <li class="login"><a href="/login"><i class="step fi-torso size-36"></i><span>로그인</span></a></li>
+                <li class="account"><a href="/reg"><i class="step fi-pencil size-36"></i><span>회원가입</span></a></li>
             </c:when>
             <c:when test="${sessionScope.user ne null}">
                 <li class="login"><a href="/logOut"><i class="step fi-torso size-36"></i><span>로그아웃 </span></a></li>

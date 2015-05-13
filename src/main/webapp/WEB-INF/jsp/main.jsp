@@ -60,7 +60,7 @@
         </div>
     </div>
 </div> -->
-<jsp:include page="../jsp/header.jsp"></jsp:include>
+<jsp:include page="header.jsp"></jsp:include>
 
 <div class="container">
     <div id="content-slider">

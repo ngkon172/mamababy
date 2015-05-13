@@ -15,7 +15,7 @@ public class Item{
 	private String category1;
 	@Column(name="category2")
 	private String category2;
-	@Column(name="prdname")
+	@Column(name="prdname" ,length = 1000)
 	private String prdname;
 	@Column(name="sellprice")
 	private String sellprice;
@@ -27,21 +27,21 @@ public class Item{
 	private String strprice;
 	@Column(name="del_type")
 	private String del_type;
-	@Column(name="filePath")
+	@Column(name="filePath" ,length = 1000)
 	private String filePath;
-	@Column(name="opttitle1")
+	@Column(name="opttitle1", length = 1000 )
 	private String opttitle1;
 	@Column(name="optcode1")
 	private String optcode1;
-	@Column(name="opttitle2")
+	@Column(name="opttitle2", length = 1000)
 	private String opttitle2;
 	@Column(name="optcode2")
 	private String optcode2;
-	@Column(name="opttitle3")
+	@Column(name="opttitle3", length = 1000)
 	private String opttitle3;	
 	@Column(name="optcode3")
 	private String optcode3;
-	@Column(name="contents")
+	@Column(name="contents", length = 1000000)
 	private String contents;
 	
 

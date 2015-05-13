@@ -15,15 +15,15 @@ public class Users {
     private String member_password;
     @Column(name="hint")
     private String hint;
-    @Column(name="pass_hint_answer")
+    @Column(name="pass_hint_answer", length = 1000)
     private String pass_hint_answer;
     @Column(name="postcode1")
     private String postcode1;
     @Column(name="postcode2")
     private String postcode2;
-    @Column(name="addr1")
+    @Column(name="addr1", length = 10000)
     private String addr1;
-    @Column(name="addr2")
+    @Column(name="addr2", length = 1000)
     private String addr2;
     @Column(name="mobile1")
     private String mobile1;

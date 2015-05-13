@@ -88,7 +88,7 @@ public class Bbs implements Serializable {
 		this.replyId = replyId;
 	}
 
-	@Column(name = "subject")
+	@Column(name = "subject",length = 10000)
 	public String getSubject() {
 		return subject;
 	}
@@ -97,7 +97,7 @@ public class Bbs implements Serializable {
 		this.subject = subject;
 	}
 
-	@Column(name = "name")
+	@Column(name = "name",length = 1000)
 	public String getName() {
 		return name;
 	}
@@ -115,7 +115,7 @@ public class Bbs implements Serializable {
 		this.password = password;
 	}
 
-	@Column(name = "content")
+	@Column(name = "content", length = 100000)
 	public String getContent() {
 		return content;
 	}

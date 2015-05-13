@@ -59,7 +59,7 @@ public class ReplyController {
 
         bbsRepository.save(bbs);
 
-        return "redirect:read?id="+id;
+        return "redirect:/bbs/read?id="+id;
 
         //리플 삭제 구현하기.
 

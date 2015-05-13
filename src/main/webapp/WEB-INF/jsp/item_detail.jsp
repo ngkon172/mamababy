@@ -73,51 +73,7 @@
     </script>
 </head>
 <body>
-<div id="header_st2">
-    <div id="header_st2_bottom">
-        <div class="xans-element- xans-layout xans-layout-logotop ">
-            <a class="logo_on" href="main.html">
-                <h1 id="main_logo">Mama Baby</h1>
-            </a>
-        </div>
-    </div>
-</div>
-<header id="nav">
-    <div class="nav-container" id="nav-container">
-
-        <nav id="global-nav">
-            <ul class="shop-nav">
-                <li><a id="shop-nav-Mom" href="mom.html">Mom</a></li>
-                <li><a id="shop-nav-Baby" href="baby.html">Baby</a></li>
-                <li><a id="shop-nav-home" href="dress.html">Dress</a></li>
-                <li><a id="shop-nav-life-style" href="acc.html">Acc</a></li>
-                <li><a id="shop-nav-culture" class="bar"
-                       href="traditonal.html">Traditional</a></li>
-
-                <li><a class="project" href="">Rent</a></li>
-                <li><a class="project" href="board.html">notice</a></li>
-                <li><a class="project" href="">review</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<nav id="side-nav">
-    <ul class="nav">
-        <li class="login"><a href="login.html"><i
-                class="step fi-torso size-36"></i><span>로그인</span></a></li>
-        <li class="account"><a href="reg.html"><i
-                class="step fi-pencil size-36"></i><span>회원가입</span></a></li>
-        <li class="orderS"><a href=""><i
-                class="step fi-list-thumbnails size-36"></i><span>주문조회</span></a>
-        </li>
-
-        <li class="cart"><a href=""><i
-                class="step fi-shopping-cart size-36"></i><span>장바구니</span></a>
-        </li>
-        <li class=""><a href="#header_st2"><i
-                class="step fi-arrow-up size-36"></i><span>맨 위로</span></a></li>
-    </ul>
-</nav>
+<jsp:include page="header.jsp"/>
 
 <div class="item-container">
     <div class="item-Box">

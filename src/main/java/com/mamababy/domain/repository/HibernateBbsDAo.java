@@ -8,11 +8,14 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import com.mamababy.domain.Board.Bbs;
 import com.mamababy.domain.Board.BbsDao;
 
+
+@Component
 @Repository("BbsDao")
 @Transactional
 public class HibernateBbsDAo implements BbsDao {
