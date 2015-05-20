@@ -1,5 +1,6 @@
 package com.mamababy;
 
+import com.mamababy.admin.Interceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -12,6 +13,8 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import javax.servlet.Filter;
 import java.nio.charset.Charset;
@@ -54,5 +57,6 @@ public class Application extends SpringBootServletInitializer {
         characterEncodingFilter.setForceEncoding(true);
         return characterEncodingFilter;
     }
+
 
 }

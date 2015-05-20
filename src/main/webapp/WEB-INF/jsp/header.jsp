@@ -70,7 +70,7 @@
                 <li class="account"><a href="/reg"><i class="step fi-pencil size-36"></i><span>회원가입</span></a></li>
             </c:when>
             <c:when test="${sessionScope.user ne null}">
-                <li class="login"><a href="/logOut"><i class="step fi-torso size-36"></i><span>로그아웃 </span></a></li>
+                <li class="login"><a href="/logout"><i class="step fi-torso size-36"></i><span>로그아웃 </span></a></li>
             </c:when>
 
         </c:choose>

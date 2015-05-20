@@ -51,15 +51,7 @@
     </script>
 </head>
 <body>
-<!-- <div id="header_st2">
-    <div id="header_st2_bottom">
-        <div class="xans-element- xans-layout xans-layout-logotop ">
-            <a class="logo_on" href="main.html">                <img alt="로고" src="http://www.pink-tiara.co.kr/web/upload/romi/top_st2/top_logo.png">
-                <h1 id="main_logo">Mama Baby</h1>
-            </a>
-        </div>
-    </div>
-</div> -->
+
 <jsp:include page="header.jsp"></jsp:include>
 
 <div class="container">

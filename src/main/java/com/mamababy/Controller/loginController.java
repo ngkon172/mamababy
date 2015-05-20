@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
@@ -43,22 +44,25 @@ public class loginController {
     }
 
     @RequestMapping(value="/loginValid")
-    public String loginValid(LoginForm loginform, HttpSession session){
+
+    public ModelAndView loginValid(LoginForm loginform, HttpSession session, Model model){
+        logger.info("====== validating login====");
+        int index = 0;
 
         if(userRepository.findByUser(loginform.getId())==null){
-            return "idfail";
+
+
+            return new ModelAndView("idFail");
         }else if(!userRepository.findByUser(loginform.getId()).getMember_password().equals(loginform.getPassword())){
 
-
-            return "passwordFail";
-
+            return new ModelAndView("passwordFail");
 
         }else{
 
             Users user = userRepository.findByUser(loginform.getId());
             session.setAttribute("user", user);
             Users sessionUser = (Users) session.getAttribute("user");
-            return "main";
+            return new ModelAndView("main");
 
         }
 
