@@ -13,6 +13,7 @@
     <title>MaMaBaby</title>
     <link href="/css/comment.css" rel="stylesheet"/>
     <link href="/css/read.css" rel="stylesheet" media="screen"/>
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
 </head>
 <body>
     <jsp:include page="header.jsp"/>
@@ -34,10 +35,10 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">Subject</th>
-                                            <td><span class="kor">공지사항제목테스트</span> </td>
+                                            <td><span class="kor">${bbs.subject}</span> </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">${bbs.subject}</th>
+                                            <th scope="row">Name</th>
                                             <td>
                                                 <span class="kor"></span>
                                                 <span class="admin_writer">${bbs.name}</span>
@@ -62,7 +63,7 @@
                             </div>
                             <div class="btnArea">
                                 <span class="left">
-                                    <a href="/${bbs.category}?page=1">
+                                    <a href="/bbs/${bbs.category}?page=1">
                                         <span class="button s romi_btn white">목록</span>
                                     </a>
                                 </span>
@@ -79,12 +80,12 @@
                                     <span class="date">${reply.regDate}</span>
                                     <span class="grade displaynone"><img src="./images/ico_point0.gif" alt="0점"/></span>
                                 <span class="button">
-                                    <a href="javascript:;" onclick=""><img src="./images/btn_ico_modify.gif" alt="수정"/></a><!-- 구현-->
-                                    <a href="javascript:;" onclick=""><img src="./images/btn_ico_delete.gif" alt="삭제"/></a><!-- 구현-->
+                                    <a href="/bbs/reply/passchk?id=${bbs.id}&rid=${reply.id}">삭제</a>
+
                                     <a href="javascript:;" onclick="" class="displaynone"><img src="./images/btn_ico_reply.gif" alt="댓글"/></a>
                                 </span>
                                     <p class="comment">
-                                    <span id="comment_contents16543">1<br>
+                                    <span id="comment_contents16543">
                                             ${reply.contents}</span></p>
                                 </li>
                             </c:forEach>
@@ -100,7 +101,8 @@
 
                                 <p>
 
-                                    <strong>댓글달기</strong>
+                                    <strong>Comment</strong>
+
                                         <span class="">
                                         이름
                                             <input id="comment_name" class="inputTypeText" type="text" value="" name="userName">
@@ -110,10 +112,11 @@
                                 </p>
                                 <p>
                                     <textarea id="comment" name="contents"></textarea>
-                                    <a class="confirm" onclick="commentWriteForm.submit();" href="#none">
+                                    <button  class="button s romi_btn white" onclick="commentWriteForm.submit();" style="height: 50px;" href="#none">
 
-                                        <img alt="확인" src="/images/btn_comment_submit.gif">
-                                    </a>
+                                                댓글 달기
+                                    </button>
+
                                 </p>
 
                             </fieldset>

@@ -2,9 +2,12 @@ package com.mamababy.Controller;
 
 import com.mamababy.domain.Board.Bbs;
 import com.mamababy.domain.Board.FileBean;
+import com.mamababy.domain.Board.noticeBbs;
 import com.mamababy.domain.repository.BbsRepository;
 import com.mamababy.domain.repository.BbsService;
+import com.mamababy.domain.repository.noticeBbsRepository;
 import com.mamababy.domain.repository.replyRepository;
+import com.mamababy.domain.user.LoginForm;
 import com.mamababy.domain.user.Reply;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,13 +46,15 @@ public class ViewController {
     private final BbsService bbsService;
     private final FileBean fileBean;
     private final replyRepository replyRepository;
+    private final noticeBbsRepository  noticeBbsRepository;
 
     @Autowired
-    public ViewController(BbsRepository bbsRepository, BbsService bbsService, FileBean fileBean, replyRepository replyRepository){
+    public ViewController(BbsRepository bbsRepository, BbsService bbsService, FileBean fileBean, replyRepository replyRepository, noticeBbsRepository noticeBbsRepository){
         this.bbsRepository = bbsRepository;
         this.bbsService = bbsService;
         this.fileBean = fileBean;
         this.replyRepository = replyRepository;
+        this.noticeBbsRepository = noticeBbsRepository;
     }
 
 
@@ -66,33 +71,36 @@ public class ViewController {
 
     // 글쓰기에서 이미지파일을 업로드한다.
     @RequestMapping(value = "/file_upload", method = RequestMethod.POST)
-    public String FileUpload(FileBean fileBean, HttpServletRequest request, Model model){
+    public String procFileUpload(FileBean fileBean,HttpServletRequest request, Model model) {
 
         HttpSession session = request.getSession();
-        String rootPath = session.getServletContext().getRealPath("/");
-        String attachPath = "/resources/files/attach";
-        logger.info("root path :" +rootPath);
+        String rootPath = session.getServletContext().getRealPath("/"); // ������ root ���
+//
+        String attachPath = "/resources/images/bbs/";
+        String Uid = UUID.randomUUID().toString();
         MultipartFile upload = fileBean.getUpload();
-        String fileName = "";
+
+        String filename = "";
         String CKEditorFuncNum = "";
+
         if(upload != null){
-            fileName = upload.getOriginalFilename();
-            fileBean.setFilename(fileName);
+            filename = "_"+Uid+"_"+upload.getOriginalFilename();
+            fileBean.setFilename(filename);
             CKEditorFuncNum = fileBean.getCKEditorFuncNum();
+
             try{
-                File file= new File(rootPath+attachPath+fileName);
+                File file = new File(rootPath +attachPath + filename);
                 upload.transferTo(file);
             }catch (IOException e){
                 e.printStackTrace();
             }
         }
-
-        String filePath = attachPath+ fileName;
-        model.addAttribute("file_path", filePath);
+        String nfilepath  ="/imagefiles/bbs/" +filename;
+        String file_path =  attachPath + filename;
+        model.addAttribute("file_path", file_path);
         model.addAttribute("CKEditorFuncNum", CKEditorFuncNum);
-
+        logger.info("filenae : "+ fileBean.getFilename() );
         return "bbs.fileupload";
-
     }
 
 
@@ -132,18 +140,25 @@ public class ViewController {
 
     }
 
-    @RequestMapping(value = "/bbs/read", method = RequestMethod.GET)
-    public String getReadVeiw(@RequestParam("id") String id, Model model){
+    @RequestMapping(value = "/bbs/read" , method = {RequestMethod.GET,RequestMethod.POST})
+    public String getReadVeiw(@RequestParam("id") String id,LoginForm loginForm ,Model model){
         logger.info("get Read View");
 
-        Bbs bbs = bbsRepository.findById(id);
+            logger.info("id = "+ id);
 
-        List<Reply> reply = replyRepository.findByBbsId(id);
 
-        model.addAttribute("bbs", bbs);
-        model.addAttribute("reply", reply);
+            Bbs bbs = bbsRepository.findById(loginForm.getId());
 
-        return "read";
+
+            logger.info("bbs items = " + bbs.getId());
+
+            List<Reply> reply = replyRepository.findByBbsId(loginForm.getId());
+
+            model.addAttribute("bbs", bbs);
+            model.addAttribute("reply", reply);
+
+            return "read";
+
     }
 
 
@@ -181,8 +196,41 @@ public class ViewController {
 
             }
         }
+        List<noticeBbs> noticeBbses = noticeBbsRepository.findAllByCategory(cate);
+
+        for(int i = 0 ; i < noticeBbses.size(); i++){
+            logger.info("================notice======================\n" +
+                    noticeBbses.get(0).getContent());
+            model.addAttribute("notice", noticeBbses);
+        }
+
         return "board";
     }
+    @RequestMapping(value = "/bbs/passwordCheck")
+    public String getPasswordCheckView(@RequestParam("id") String id, Model model){
+        model.addAttribute("id", id);
+        return "/passwordCheck";
+    }
+
+    @RequestMapping(value ="/bbs/passwordChecking" , method = {RequestMethod.POST})
+    public String passwordCheck(LoginForm loginForm , Model model){
+        if(loginForm.getPassword().equals(bbsRepository.findById(loginForm.getId()).getPassword())) {
+        logger.info(loginForm.getId() + loginForm.getPassword());
+        return "redirect:/bbs/read?id="+loginForm.getId();
+        }else {
+            model.addAttribute("id", loginForm.getId());
+            return "/passwordCheckFail";
+        }
+    }
+
+    @RequestMapping(value = "/bbs/noticeRead")
+    public String noticeRead(@RequestParam("id")String id,Model model){
+        noticeBbs noticeBbs =noticeBbsRepository.findById(id);
+        model.addAttribute("notice" , noticeBbs);
+        return "noticeRead";
+    }
+
+
 
 
 

@@ -19,6 +19,7 @@ import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.UUID;
 
 /**
  * Created by hoy on 15. 4. 27..
@@ -37,6 +38,11 @@ public class productUploadController {
         this.productRepository = productRepository;
     }
 
+    @RequestMapping(value = "/product/add")
+    public String getProductUploadView(){
+        return "/admin/product_add";
+    }
+
     @RequestMapping(value = "/product_upload", method = RequestMethod.POST)
     public String uploadProduct(ItemForm itemForm, HttpServletRequest request, Model model) throws IOException {
         logger.info("get product upload View");
@@ -53,7 +59,7 @@ public class productUploadController {
 
         HttpSession session = request.getSession();
         String rootPath = session.getServletContext().getRealPath("/");
-        String attachPath = "/resources/files/attach/";
+        String attachPath = "/resources/images/product/";
         String fileName = "";
         String filePath = "";
 
@@ -63,20 +69,20 @@ public class productUploadController {
 
         DecimalFormat format = new DecimalFormat("0000");
         String idI = format.format(cnt).toString();
-        String id = idDate + idI;
+        String id = UUID.randomUUID().toString();
 
         MultipartFile img = itemForm.getRealimg();
 
         if (img != null) {
-            fileName = img.getOriginalFilename();
-            filePath = rootPath + attachPath + id + "/";
-            File file1 = new File(filePath);
-            file1.mkdirs();
-            File file = new File(filePath + fileName);
+            fileName = "_"+id+"_"+img.getOriginalFilename();
+            filePath = rootPath + attachPath +fileName;
+
+            File file = new File(filePath);
             img.transferTo(file);
+            logger.info("file path =" + filePath);
         }
 
-        String newfilePath = attachPath + "/" + fileName;
+        String newfilePath = attachPath + fileName;
         cnt = cnt + 1;
 
         Item item = new Item(id, itemForm.getCategory1(), itemForm.getCategory2(), itemForm.getPrdname(),
@@ -89,7 +95,7 @@ public class productUploadController {
 
         model.addAttribute("item", item);
 
-        return "/item_detail-test";
+        return "/item_detail";
 
     }
 

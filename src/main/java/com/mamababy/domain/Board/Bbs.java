@@ -33,6 +33,7 @@ public class Bbs implements Serializable {
 	private int no;
 	private Long replyCount;
 
+
 	@Column(name = "hit")
 	public int getHit() {
 		return hit;
@@ -131,6 +132,5 @@ public class Bbs implements Serializable {
 	public void setReplyCount(Long replyCount) {
 		this.replyCount = replyCount;
 	}
-	
 
 }

@@ -1,16 +1,17 @@
 package com.mamababy.domain.user;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="reply")
-public class Reply {
+public class Reply implements Serializable{
+
+	private static final long serialVersionUID = -2996961608681856380L;
 	
-	@javax.persistence.Id
+	@Id
 	@Column(name="id")
-	private String Id;
+	private String id;
 	@Column(name="bbsId")
 	private String bbsId;
 	@Column(name="regDate")
@@ -21,13 +22,13 @@ public class Reply {
 	private String password;
 	@Column(name="userName")
 	private String userName;
-	
-	
+
+
 	public String getId() {
-		return Id;
+		return id;
 	}
 	public void setId(String id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getBbsId() {
 		return bbsId;
@@ -59,8 +60,8 @@ public class Reply {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	
-	
-	
+
+
+
 
 }

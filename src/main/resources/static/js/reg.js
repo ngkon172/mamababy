@@ -9,6 +9,10 @@ function idCheck(){
     var regexp = /[0-9a-zA-Z]/; // 숫자,영문,특수문자
     // var regexp = /[0-9]/; // 숫자만
 //         var regexp = /[a-zA-Z]/; // 영문만
+    if(text.length < 4 || text.length >12){
+        alert("ID 를 4 ~ 12 자로 해주세요");
+        return ;
+    }
 
     for(var i=0; i<text.length; i++){
         if(text.charAt(i) != " " && regexp.test(text.charAt(i)) == false ){
@@ -24,11 +28,12 @@ function idCheck(){
 function overlapCheck(){
 
     var param = "member_id" + "=" + $("#member_id").val();
-    if($("#member_id").val() == '' || $("#member_id").val()==null)
+    if($("#member_id").val() === '' || $("#member_id").val()===null)
     {
         alert("아이디를 입력하세요");
         return false;
     }
+
 
     $.ajax({
         url : "/reg/overlaptest.do",
@@ -64,7 +69,7 @@ function overlapCheck(){
 
 
 function checkemailaddy(){
-        if (joinForm.email_select.value == '1') 
+        if (joinForm.email_select.value === '1')
         {
             joinForm.email2.readOnly = false;
             joinForm.email2.value = '';
@@ -93,69 +98,74 @@ function onlyNumber(event) {
 
 function memberChk()
  {
-  var check = document.joinForm;
+  var check = document.getElementById('join') ;
 
- if (check.member_id.value == "") {
+ if (check.member_id.value === "") {
    alert("아이디를 입력하세요");
    check.member_id.focus();
-   return ;
+   return false;
   }
 
- if (check.member_password.value == "") {
+ else if (check.member_password.value === "") {
    alert("비밀번호를 입력하세요");
    check.member_password.focus();
-   return ;
+   return false;
   }
 
- if (check.member_password_check.value == "") {
+ else if (check.member_password_check.value === "") {
    alert("비밀번호를 다시한번 입력해주세요");
    check.member_password_check.focus();
-   return ;
+   return false;
   }
 
- if (check.member_password.value != check.member_password_check.value) {
+ else if (check.member_password.value !== check.member_password_check.value) {
    alert("비밀번호가 다릅니다.");
    check.member_password.value = "";
    check.member_password_check.value = "";
    check.member_password.focus();
-   return ;
+   return false;
   }
-     
 
 
- if (check.member_name.value == "") {
-   alert("이름을 입력해 주세요");
+ else if (check.userName.value === "") {
+   alert("이름을 입력해 주세요" + count);
    check.member_name.focus();
-   return ;
+   return false;
   }
-if (check.postcode1.value == "" || check.postcode2.value == "" || check.addr1.value == "" || check.addr2.value == "") {
+else if (check.postcode1.value === "" || check.postcode2.value === "" || check.addr1.value === "" || check.addr2.value === ""){
    alert("주소를 입력해 주세요");
    check.addr2.focus();
-   return ;
+   return  false;
   }     
      
-if (check.mobile2.value == "" || check.mobile3.value == "") {
+else if (check.mobile2.value === "" || check.mobile3.value === "") {
    alert("핸드폰 번호를 입력해 주세요");
-    if(check.mobile2.value ==""){
+    if(check.mobile2.value ===""){
         check.mobile2.focus();
     }else{
         check.mobile3.focus();
     }
-   return ;
+   return false;
   }
-if (check.email1.value == "" || check.email2.value == "") {
+else if (check.email1.value === "" || check.email2.value === "") {
     alert("e-mail을 입력해 주세요");
     check.email1.focus();
-    return;
+    return false;
 }
-if(count == 0){
+else if(count ===0){
     alert("중북 체크를 해주세요");
     check.member_id.focus();
     return false;
+
 }
-check.action = "/reg";
-check.target = "form";	
-check.submit();
+
+     else{
+         return true;
+}
+     check.action = "/reg";
+     check.target = "form";
+     check.method="post";
+     check.submit();
 
  }
 

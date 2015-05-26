@@ -1,4 +1,4 @@
- $(function(){
+$(function(){
     function initToolbarBootstrapBindings() {
       var fonts = ['Nanum Gothic','Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 
             'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',

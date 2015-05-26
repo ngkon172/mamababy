@@ -27,6 +27,7 @@
     <link href="/css/slideshow.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css"
           href="/fonts/foundation-icons/foundation-icons.css">
+    <link href="/css/read.css" rel="stylesheet"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 <body>
@@ -58,13 +59,14 @@
                         </tr>
                         </thead>
                         <tbody class="element- board board-notice-4 board-notice board-4 notice">
+                        <c:forEach var="noticeItem" items="${notice}" varStatus="status">
                         <tr class="record-" style="background-color:#FFFFFF; color:#555555;">
                             <td class="number">
                                 <i class="fa fa-bell"></i>
                             </td>
 
                             <td class="subject">
-                                <a href="read.html">공지사항 테스트</a>
+                                <a href="/bbs/noticeRead?id=${noticeItem.id}">${noticeItem.subject}</a>
                                 <i class="notice_check fi-check"></i>
                             </td>
                             <td class="writer" id="admin_writer">
@@ -72,7 +74,7 @@
                             </td>
                             <td class="date ">2014-07-01</td>
                         </tr>
-
+                        </c:forEach>
                         </tbody>
                         <tbody class="element- board board-list-4 board-list board-4">
 
@@ -88,7 +90,8 @@
                                                 </a>
                                             </span>
                                     <i class="fa fa-lock"></i>
-                                    <a href="./read?id=${bbsitem.id}">${bbsitem.subject}<span class="romi_date">
+                                    <a href="/bbs/passwordCheck?id=${bbsitem.id}">${bbsitem.subject}<span class="romi_date">
+
 
     [${bbsitem.replyCount}]
 
@@ -107,7 +110,7 @@
                         </c:forEach>
                         </tbody>
                     </table>
-                    <button><a href="/write?cate=${cate}">글쓰기</a></button>
+                    <a  class ="button s romi_btn gray" href="/write?cate=${cate}">글쓰기</a>
                 </div>
             </div>
 

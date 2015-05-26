@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -163,7 +164,10 @@ body {
 							<a href="/admin/orderList">주문목록</a>
 						</li>
 						<li>
-							<a href="#">게시판관리</a>
+							<a href="/admin/bbsList/rent?page=1">게시판관리</a>
+						</li>
+						<li>
+							<a href="/admin/product/add">상품등록</a>
 						</li>
 					</ul>
 				</div>
@@ -178,6 +182,8 @@ body {
 							<thead>
 								<tr>
 									<th>상품코드</th>
+									<th>대분류</th>
+									<th>소분</th>
 									<th>상품명</th>
 									<th>상품가격</th>
 									<th>재고</th>
@@ -185,13 +191,18 @@ body {
 								</tr>
 							</thead>
 							<tbody>
+							<c:forEach var="itemList" items="${itemList}" varStatus="status">
 								<tr>
-									<th>2232323323</th>
-									<th>머야이건</th>
-									<th>30000원</th>
-									<th>100</th>
-									<th><a  href="#" class="btn btn-default">수정</a>        <a href="#" class="btn btn-danger">삭제</a></th>
+									<th>${itemList.id}</th>
+									<th>${itemList.category1}</th>
+									<th>${itemList.category2}</th>
+									<th>${itemList.prdname}</th>
+									<th>${itemList.sellprice}</th>
+									<th>${itemList.reserve}</th>
+									<th>${itemList.stock}</th>
+									<th><a  href="/admin/productList/update?id=${itemList.id}" class="btn btn-default">수정</a>        <a href="#" class="btn btn-danger">삭제</a></th>
 								</tr>
+							</c:forEach>
 							</tbody>
 						</table>
 					</div>

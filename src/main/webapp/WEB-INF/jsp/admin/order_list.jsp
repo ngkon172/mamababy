@@ -160,7 +160,10 @@ body {
 							<a href="/admin/orderList">주문목록</a>
 						</li>
 						<li>
-							<a href="#">게시판관리</a>
+							<a href="/admin/bbsList/rent?page=1">게시판관리</a>
+						</li>
+						<li>
+							<a href="/admin/product/add">상품등록</a>
 						</li>
 					</ul>
 				</div>

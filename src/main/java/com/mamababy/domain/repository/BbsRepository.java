@@ -8,7 +8,11 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.mamababy.domain.Board.Bbs;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+@Repository
+@Component
 public interface BbsRepository extends JpaRepository<Bbs, Long>,JpaSpecificationExecutor<Bbs> {
 
 	@Override

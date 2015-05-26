@@ -13,6 +13,19 @@
     <script src="/js/ckeditor/ckeditor.js"></script>
 </head>
 <body>
+<style type="text/css">
+    .inputs{
+        padding: 0;
+        height: 20px;
+        width: 200px;
+    }
+    #name , #password{
+
+        padding: 0;
+        height: 20px;
+        width: 200px;
+    }
+</style>
 <script>
     // ckeditor setting
     var ckeditor_config = {
@@ -21,7 +34,7 @@
         shiftEnterMode : CKEDITOR.ENTER_P ,  // 쉬프트 +  엔터를 <p> 로 적용함.
         toolbarCanCollapse : true ,
         removePlugins : "elementspath", // DOM 출력하지 않음
-        filebrowserUploadUrl: '/file_upload', // 파일 업로드를 처리 할 경로 설정.
+        filebrowserUploadUrl: '/file_upload?id${bbs.id}', // 파일 업로드를 처리 할 경로 설정.
 
         // 에디터에 사용할 기능들 정의
         toolbar : [
@@ -127,16 +140,16 @@
                                 <th scope="row">subject</th>
                                 <td><input id="subject" name="subject" value="${bbs.subject}"></td>
                             </tr>
-                            <tr>
+                            <tr style="height: 30px">
                                 <th scope="row">name</th>
-                                <td><span class="kor"> </span><input id="name" name="name" value="${bbs.name}"/></td>
+                                <td style="height: auto;"><input id="name" name="name" class="inputs" value="${bbs.name}"/></td>
                             </tr>
                             <tr>
                                 <th scope="row">password</th>
-                                <td><input id="password" name="password" type = "password" value="${bbs.password}" /></td>
+                                <td><input id="password" name="password" type = "password" class="inputs" value="${bbs.password}" /></td>
                             </tr>
                             <tr class="category displaynone" >
-                                ,						<td><input id="category" name="category" value="${cate}"/>
+                                						<td><input id="category" name="category" value="${cate}"/>
                             </tr>
 
 
@@ -158,17 +171,13 @@
 
 
                         </table>
-                        <input type="submit"/>
-                        <div class="btnArea ">
-						<span class="left"> <a href="/${cate}?page=1"> <span
-                                class="button s romi_btn white">목록</span>
-                        </a>
-					<a class="" href=""> <span class="button s romi_btn gray"><button id="save" type="button" onclick="form_save('#form');">작성</button></span>
 
-                    </a>
+
+                            <span>
+
+					          <input class ="button s romi_btn gray"type="submit" value="작성"/>
 						</span>
 
-                        </div>
 
                     </form>
 

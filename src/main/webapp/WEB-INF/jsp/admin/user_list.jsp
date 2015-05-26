@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
@@ -164,7 +165,10 @@ body {
 							<a href="/admin/orderList">주문목록</a>
 						</li>
 						<li>
-							<a href="#">게시판관리</a>
+							<a href="/admin/bbsList/rent?page=1">게시판관리</a>
+						</li>
+						<li>
+							<a href="/admin/product/add">상품등록</a>
 						</li>
 					</ul>
 				</div>
@@ -183,20 +187,22 @@ body {
 									<th>휴대폰</th>
 									<th>이메일</th>
 									<th>적립금</th>
-									<th>가입일</th>
+
 									<th>상세보기</th>
 								</tr>
 							</thead>
 							<tbody>
+								<c:forEach var="userItem" items="${userList}" varStatus="status">
 								<tr>
-									<th>홍지수</th>
-									<th>ngkon</th>
-									<th>010-4788-5106</th>
-									<th>ngkon172@gmail.com</th>
-									<th>20000p</th>
-									<th>2015-01-01</th>
-									<th><a  href="#" class="btn btn-default">상세보기</a></th>
+									<th>${userItem.userName}</th> <!-- 이름  -->
+									<th>${userItem.user}</th> <!-- id -->
+									<th>${userItem.mobile1}-${userItem.mobile2}-${userItem.mobile3}</th> <!-- h.p-->
+									<th>${userItem.email1}@${userItem.email2}</th>
+									<th>${userItem.point}p</th>
+
+									<th><a  href="/admin/userList/detail?id=${userItem.user}" class="btn btn-default">상세보기</a></th>
 								</tr>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>

@@ -59,7 +59,7 @@
                 <li><a class="project" href="/bbs/QnA?page=1">QnA</a> </li>
                 <li><a class="project" href="/bbs/Review?page=1">review</a> </li>
             </ul>
-        </nav>
+        </nav>-
     </div>
 </header>
 <nav id="side-nav">

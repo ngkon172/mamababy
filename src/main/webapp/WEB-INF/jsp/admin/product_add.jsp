@@ -7,14 +7,15 @@
 <title>::::: 쇼핑몰 관리자 :::::</title>
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+
     <link href="/css/editor.css" rel="stylesheet"/>
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
     <script src="/js/editor_loader.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/resources/ckeditor/ckeditor.js" type="text/javascript"></script>
-	
+    <script src="/js/ckeditor/ckeditor.js" type="text/javascript"></script>
+
 <script language="JavaScript" type="text/JavaScript">
 <!--
 function MM_swapImgRestore() { //v3.0
@@ -47,9 +48,9 @@ function MM_swapImage() { //v3.0
          resize_enabled : false, // 에디터 크기를 조절하지 않음
          enterMode : CKEDITOR.ENTER_BR , // 엔터키를 <br> 로 적용함.
          shiftEnterMode : CKEDITOR.ENTER_P ,  // 쉬프트 +  엔터를 <p> 로 적용함.
-         toolbarCanCollapse : true , 
+         toolbarCanCollapse : true ,
          removePlugins : "elementspath", // DOM 출력하지 않음
-         filebrowserUploadUrl: '/admin/file_upload', // 파일 업로드를 처리 할 경로 설정.
+         filebrowserUploadUrl: '/file_upload', // 파일 업로드를 처리 할 경로 설정.
 
          // 에디터에 사용할 기능들 정의
          toolbar : [
@@ -66,26 +67,26 @@ function MM_swapImage() { //v3.0
 
        };
     var editor = null;
-    
+
     jQuery(function() {
     	// ckeditor 적용
       editor = CKEDITOR.replace( "content" , ckeditor_config );
     });
-	
+
 	// 전송을 위한 체크 함수
 	function form_save(form) {
 		editor.updateElement();
 	    var is = true;
 	    //filter([
 	   /*  { target : '#subject' , filter : 'empty' , title : '제목' },
-	    { target : '#content' , filter : 'empty' , title : '내용' } , 
+	    { target : '#content' , filter : 'empty' , title : '내용' } ,
 	    { target : '#name' , filter : 'empty' , title : '작성자' },
 	    { target : '#password' , filter : 'empty', title :'비밀번호'} */
 	   // ]);
-	
+
 	    if (is == true) {
 	    	  jQuery.ajax({
-	    	      type : 'POST' , 
+	    	      type : 'POST' ,
 	    	      url : './write_ok' ,
 	    	      data : jQuery('#form :input').serialize()
 	    	      }).done(function(data) {
@@ -96,14 +97,14 @@ function MM_swapImage() { //v3.0
 	    	      });
 	    	  }
 	}
-	
+
 	// 입력 항목의 체크 함수
 	function filter(options) {
 	    var is = true;
-	
+
 	    jQuery(options).each(function() {
 	        var item = this;
-	
+
 	        switch (item.filter) {
 	            case 'empty' :
 	                var val = jQuery(item.target).val();
@@ -113,7 +114,7 @@ function MM_swapImage() { //v3.0
 	                    is = false;
 	                }
 	            break;
-	
+
 	            case 'number' :
 	                var val = jQuery(item.target).val();
 	                var num_regx = /[^0-9]/;
@@ -123,21 +124,21 @@ function MM_swapImage() { //v3.0
 	                    is = false;
 	                }
 	            break;
-	
+
 	        }
 	    });
 	    return is;
 	}
-	
+
 </script>
 </head>
 
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-		
+
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Mama Baby</a> 
+					<a class="navbar-brand" href="#">Mama Baby</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -505,7 +506,7 @@ function editOption(){
 	if(optcode_01 == ""){
 		alert("옵션을 입력하세요.");
 		frm.optcode_01.focus();
-		return; 
+		return;
 	}
 	if(optcode_02 == "") optcode_02 = "0";
 	if(optcode_03 == "") optcode_03 = "0";
@@ -756,7 +757,7 @@ function popMycoupon(prdcode){
 //-->
 </script>
 <div class="container-fluid">
-<form action="product_upload" method="post" enctype="multipart/form-data">
+<form action="/admin/product_upload" method="post" enctype="multipart/form-data">
       <table border="0" cellspacing="0" cellpadding="2">
           <tr>
               <td><img src="/images/ic_tit.gif"></td>
@@ -786,12 +787,12 @@ function popMycoupon(prdcode){
               <tr>
                 <td class="t_name">상품분류</td>
                 <td class="t_value" colspan="3">
-                <select name="Category1">
+                <select name="Category1" >
                 	<option value="MOM">MOM</option>
                 	<option value="BABY">BABY</option>
                 	<option value="ACC">ACC</option>
                 </select>
-                <select name="Category2">
+                <select name="Category2" >
                 	<optgroup label="MoM">MOM</optgroup>
                 	<option value="Outer">Outer</option>
                 	<option value="Top">Top</option>
@@ -816,9 +817,9 @@ function popMycoupon(prdcode){
                 	<option value="momShoes">Mom's Shoes</option>
                 	<option value="girlsDress">Girl's Dress</option>
                 	<option vlaue="girlsACC">Girl's ACC</option>
-                	
+
                 	</select>
-                	
+
                                 </td>
               </tr>
               <!--<tr>
@@ -946,7 +947,7 @@ function popMycoupon(prdcode){
       <br>
       </div>
 
-			
+
       <br>
       <table width="100%" border="0" cellspacing="0" cellpadding="2">
 			  <tr>
@@ -974,11 +975,7 @@ function popMycoupon(prdcode){
                 </td>
               </tr>
               <tr>
-              	<td class="t_name">가격대체문구</td>
-                <td class="t_value" colspan="3">
-                	<input name="strprice" type="text" value="" class="input">
-                	가격대체문구를 입력하면 가격대신 입력한 문구가 보이며 구매가 불가능합니다.
-                </td>
+
               </tr>
             </table>
           </td>
@@ -1027,7 +1024,7 @@ function popMycoupon(prdcode){
                 <td width="85%" class="t_value" colspan="3">
                 옵션명 : <input type="text" name="opttitle1" value="" size="12" class="input">
                 &nbsp; 옵션 : <input type="text" name="optcode1" value="" size="40" class="input">
-                <img src="/images/btn_valuecall.gif" style="cursor:hand"  align="absmiddle" onClick="openOption('opt5');"> 옵션은 컴마(,)로 구분
+                옵션은 컴마(,)로 구분
                 </td>
               </tr>
               <tr>
@@ -1035,7 +1032,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 옵션명 : <input type="text" name="opttitle2" value="" size="12" class="input">
                 &nbsp; 옵션 : <input type="text" name="optcode2" value="" size="40" class="input">
-                <img src="/images/btn_valuecall.gif" style="cursor:hand"  align="absmiddle" onClick="openOption('opt6');"> ex(95,100,105...)
+                 ex(95,100,105...)
                 </td>
               </tr>
               <tr>
@@ -1043,44 +1040,13 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 옵션명 : <input type="text" name="opttitle3" value="" size="12" class="input">
                 &nbsp; 옵션 : <input type="text" name="optcode3" value="" size="40" class="input">
-                <img src="/images/btn_valuecall.gif" style="cursor:hand"  align="absmiddle" onClick="openOption('opt7');">
+
                 </td>
               </tr>
             </table>
 
             <table><tr><td></td></tr></table>
-            <table width="100%" border="0" cellspacing="1" cellpadding="2" class="t_style">
-              <tr>
-                <td width="15%" class="t_name">가격추가 옵션1</td>
-                <td width="85%" class="t_value" colspan="3">
-	                옵션명 : <input type="text" name="opttitle3" value="" size="12" class="input">
-	                <img src="/images/btn_valuecall.gif" style="cursor:hand"  align="absmiddle" onClick="openOption('opt3');">
-	                <a href="javascript:addopt('opt3')">[항목추가]</a>
-	             	  <a href="javascript:delopt('opt3')">[항목삭제]</a>
-	                <br>
-	                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="opt3">
-	                	<tr>
-	                		<td></td>
-	                	</tr>
-														          </table>
-                </td>
-              </tr>
-              <tr>
-                <td class="t_name">가격추가 옵션2</td>
-                <td class="t_value" colspan="3">
-	                옵션명 : <input type="text" name="opttitle4" value="" size="12" class="input">
-	                <img src="/images/btn_valuecall.gif" style="cursor:hand"  align="absmiddle" onClick="openOption('opt4');">
-	                <a href="javascript:addopt('opt4')">[항목추가]</a>
-	             	  <a href="javascript:delopt('opt4')">[항목삭제]</a>
-	                <br>
-	                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="opt4">
-	                	<tr>
-	                		<td></td>
-	                	</tr>
-														          </table>
-                </td>
-              </tr>
-            </table>
+
 
             <table><tr><td></td></tr></table>
             <table width="100%" border="0" cellspacing="1" cellpadding="2" class="t_style">
@@ -1162,7 +1128,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_R" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1172,7 +1138,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_S1" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1182,7 +1148,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_M1" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1192,7 +1158,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_L1" class="input">
 
-                
+
                 </td>
               </tr>-->
             </table>
@@ -1227,7 +1193,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_S2" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1236,7 +1202,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_M2" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1245,7 +1211,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_L2" class="input">
 
-                
+
                 </td>
               </tr>
             </table>
@@ -1281,7 +1247,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_S3" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1290,7 +1256,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_M3" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1299,7 +1265,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_L3" class="input">
 
-                
+
                 </td>
               </tr>
             </table>
@@ -1335,7 +1301,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_S4" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1344,7 +1310,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_M4" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1353,7 +1319,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_L4" class="input">
 
-                
+
                 </td>
               </tr>
             </table>
@@ -1389,7 +1355,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_S5" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1398,7 +1364,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_M5" class="input">
 
-                
+
                 </td>
               </tr>
               <tr>
@@ -1407,7 +1373,7 @@ function popMycoupon(prdcode){
                 <td class="t_value" colspan="3">
                 <input type="file" name="prdimg_L5" class="input">
 
-                
+
                 </td>
               </tr>
             </table>
@@ -1432,7 +1398,7 @@ function popMycoupon(prdcode){
 
       <table width="100%" height="10" border="0" cellpadding="0" cellspacing="0">
         								<tr>
-								
+
 								<td >
 								<textarea id="content"  name="content" rows="10" cols ="20">${bbs.content}</textarea>
 								</td>
@@ -1491,7 +1457,7 @@ function popMycoupon(prdcode){
           </td>
         </tr>
       </table>
-      
+
       </form>
 </div>
 <script>setClass01();setCategory();prdlayCheck();lodingComplete();</script>
@@ -1523,4 +1489,3 @@ function popMycoupon(prdcode){
 </body>
 </html>
 
-	

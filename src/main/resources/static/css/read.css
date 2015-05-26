@@ -358,6 +358,7 @@ body {
     border-radius: 2px;
     box-shadow: 0 1px 1px #f7f7f7;
     margin: 1px;
+    margin: 1em;
 }
 .gray {
     background: none repeat scroll 0 0 #fafafa;
@@ -382,7 +383,7 @@ body {
 }
 
 .commentWrite #comment{
-    width: 550px;
+    width: 570px;
     height: 100px;
     margin-top: 10px;
     
@@ -392,7 +393,7 @@ body {
     padding-right: 40px;
 }
 .commentWrite span{
-    padding-right: 20px;
+    padding-right: 1.5em;
 }
 .commentWrite .confirm img{
     margin-top: 30px;
@@ -402,6 +403,7 @@ body {
     width: 700px;
     margin: 0 auto;
 }
+.commentWrite
 
 .titleArea {
     clear: both;

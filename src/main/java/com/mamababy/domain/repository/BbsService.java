@@ -19,7 +19,7 @@ import com.mamababy.domain.Board.Bbs;
 @Repository
 public class BbsService implements BbsRepository {
 
-	private static final int PAGE_SIZE = 2;
+	private static final int PAGE_SIZE = 10;
 
 	@Autowired
 	private BbsRepository bbsRepo;

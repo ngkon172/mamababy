@@ -53,12 +53,15 @@ public class AdminloginController {
     @RequestMapping(value = "/orderList")
     public String getOrderList(){ return  "/admin/order_list";}
 
-    @RequestMapping(value = "/userList")
-    public String getUserList(){return  "/admin/user_list";}
+//    @RequestMapping(value = "/userList")
+//    public String getUserList(){return  "/admin/user_list";}
 
-    @RequestMapping(value = "/productList")
-    public String getProductList(){return  "/admin/product_list";}
+//    @RequestMapping(value = "/productList")
+//    public String getProductList(){return  "/admin/product_list";}
 
+
+    @RequestMapping(value = "/bbsList")
+    public String getBbsList(){return "/admin/bbs_list";}
 
 
 }

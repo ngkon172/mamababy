@@ -4,111 +4,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="css/buttons.css" rel="stylesheet" />
-    <link href="css/reg.css" rel="stylesheet" media="screen" />
+    <link href="/css/buttons.css" rel="stylesheet" />
+    <link href="/css/reg.css" rel="stylesheet" media="screen" />
 
     <script
             src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="http://dmaps.daum.net/map_js_init/postcode.js"></script>
-    <script src="js/reg.js" type="text/javascript"></script>
+    <script src="/js/reg.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
 
-
-
-        function formCheck() {
-            var member_id = document.getElementById('member_id');
-            var password = document.getElementById('password');
-            var password_hint = document.getElementById('password_hint');
-            var password_check = document.getElementById('password_check');
-            var hp1 = document.getElementById('hp1');
-            var hp2 = document.getElementById('hp2');
-            var hp3 = document.getElementById('hp3');
-            var hp = hp1.value + "-" + hp2.value + "-" + hp3.value;
-
-            /*핸드폰 번호 길이 체크*/
-
-
-            if (member_id.value == '' || member_id.value == null) {
-                alert('ID를 입력하세요');
-                focus.member_id;
-                return false;
-            }
-
-            if (password.value == '' || password.value == null) {
-                alert('비밀번호를 입력하세요');
-                focus.password;
-                return false;
-            }
-
-            if (password_check.value == '' || password_check.value == null) {
-                alert('비밀번호확인란을 입력하세요');
-                focus.password_hint;
-                return false;
-            }
-
-            /*비밀번호와 비밀번호확인란 같은지 확인*/
-            if (password.value != password_check.value){
-                alert("비밀번호와 비밀번호 확인란이 다릅니다.");
-                focus.passowrd;
-                return false;
-            }
-
-            if (password_hint.value == '' || password_hint.value == null) {
-                alert('비밀번호힌트를 입력하세요');
-                focus.password_hint;
-                return false;
-            }
-
-            /*핸드폰 번호 길이 체크*/
-            if(hp2.value.length<=2 || hp3.value.length!=4){
-                alert("휴대폰번호를 제대로 입력해주세요");
-                focus.hp2;
-                return false;
-            }
-            /*핸드폰이 숫자만 들어가는지 체크*/
-            if(isNaN(hp2.value) || isNaN(hp3.value))
-            {
-                alert("휴대폰번호는 숫자만 들어갈 수 있습니다.");
-                return false;
-            }
-            /**/
-            if (hp2.value.length > 2 || hp3.value.length==4){
-                document.getElementById("member_HP").value = hp;
-            }
-
-            if(count == 0)
-            {
-                alert("중복확인을 눌러주세요");
-                return false;
-            }
-
-            else{
-                save();
-            }
-
-        }
-
-
-        function init(){
-            count=0;
-        }
-
-        function save() {
-// 		alert($("#password_hint").val());
-// 		alert($("#member_HP").val());
-            var str3 = document.getElementById('join');
-            str3.submit();
-            alert("가입이 완료되었습니다.")
-        }
-
-        function countCheck(){
-            if(count==1){
-                count=0;
-            }
-        }
-    </script>
 
 </head>
 <body>
@@ -119,15 +24,22 @@
                 <h2>join us</h2>
                 <p>회원가입</p>
             </div>
-            <form id="join" name="joinForm" method="post">
+            <form id="join" name="joinForm" method="post" action="/reg" onsubmit="return memberChk();">
                 <div class="member-join">
                     <h3>기본정보</h3>
                     <div class="boardWrite">
                         <table border="" summary="">
-                            <caption>회원 기본정보</caption>
+                            <caption>회원 기본정보 </caption>
                             <tbody>
                             <tr>
-                                <th scope="row">아이디</th>
+                                <th scope="row">아이디<script type="javascript">
+                                    document.write("<p>count = "+count+"<p>");
+                                    document.write();
+
+                                </script>
+                                    <script>
+                                        document.write(count);
+                                    </script></th>
                                 <td>
 
 
@@ -198,7 +110,7 @@
                             <tr>
                                 <th id="nameTitle" scope="row">이름</th>
                                 <td><span id="nameContents"> <input id="name"
-                                                                    type="text" maxlength="20" name="member_name">
+                                                                    type="text" maxlength="20" name="userName">
 										</span> <span id="under14Msg" class="displaynone">14세 미만
 												사용자는 법정대리인 동의가 필요합니다.</span></td>
                             </tr>
@@ -297,15 +209,15 @@
                                     월 <input id="partner_day" class="inputTypeText" type="text"
                                              value="" maxlength="2" name="partner_day"> 일</td>
                             </tr>
-                            <tr class="">
-                                <th scope="row">자녀생일2</th>
-                                <td><input id="partner_year" class="inputTypeText"
-                                           type="text" value="" maxlength="4" name="partner_year1">
-                                    년 <input id="partner_month" class="inputTypeText"
-                                             type="text" value="" maxlength="2" name="partner_month1">
-                                    월 <input id="partner_day" class="inputTypeText" type="text"
-                                             value="" maxlength="2" name="partner_day1"> 일</td>
-                            </tr>
+                            <%--<tr class="">--%>
+                                <%--<th scope="row">자녀생일2</th>--%>
+                                <%--<td><input id="partner_year" class="inputTypeText"--%>
+                                           <%--type="text" value="" maxlength="4" name="partner_year1">--%>
+                                    <%--년 <input id="partner_month" class="inputTypeText"--%>
+                                             <%--type="text" value="" maxlength="2" name="partner_month1">--%>
+                                    <%--월 <input id="partner_day" class="inputTypeText" type="text"--%>
+                                             <%--value="" maxlength="2" name="partner_day1"> 일</td>--%>
+                            <%--</tr>--%>
                             </tbody>
                         </table>
                     </div>
@@ -322,12 +234,10 @@
                         </p>
                     </div>
                     <div class="btnArea center">
+                        <input type="submit"  class="joinus button button-border-highlight button-pill" value="회원가입" style="padding: 0 2em;  text-decoration: none; padding-bottom: 1em; border: 1px solid; text-align: center;" />
 
 
-
-                        <a onClick="memberChk(); joinform.submit();" href="#none"
-                           class="joinus button button-border-highlight button-pill"
-                           style="text-decoration: none;"> 회원가입 </a> <a
+                            <a
                             href="/index.html"
                             class="cancel button button-border-caution button-pill"
                             style="text-decoration: none;"> 취소 </a>

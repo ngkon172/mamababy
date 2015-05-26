@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,13 +44,16 @@ public class registerController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String registUser(@ModelAttribute Users users, BindingResult result){
+    public String registUser(@ModelAttribute Users users, BindingResult result , Model model){
 
         logger.info("============dataTEst ==============================");
         logger.info("addr1 = " + users.getAddr1());
         userRepository.save(users);
+        model.addAttribute("msg", "회원 가입이 완료 되었습니다");
+        model.addAttribute("url", "/main");
 
-        return "/main";
+
+        return "/alert";
     }
 
     @RequestMapping(value="/overlaptest.do")

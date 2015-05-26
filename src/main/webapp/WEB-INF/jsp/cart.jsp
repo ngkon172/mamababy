@@ -227,7 +227,7 @@
                                 <tr>
                                     <td align=center>
                                         <a href="" onFocus="blur()"><img src="images/btn_order.gif" border=0></a>
-                                        <a href="/" onFocus="blur()"><img src="images/btn_back.gif" border=0></a>
+                                        <a href="javascript:history.go(-1)"  onFocus="blur()"><img src="images/btn_back.gif" border=0></a>
 
                                     </td>
                                 </tr>

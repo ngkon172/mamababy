@@ -11,6 +11,8 @@ public class Users {
     @Id
     @Column(name="user")
     private String user;
+    @Column(name="user_name")
+    private String userName;
     @Column(name="member_password")
     private String member_password;
     @Column(name="hint")
@@ -57,7 +59,9 @@ public class Users {
     private String partner_month1;
     @Column(name="partner_day1")
     private String partner_day1;
-    @Column(name="point")
+
+    @Column(name="point", columnDefinition = "default '0'")
+
     private String point;
 
 
@@ -65,6 +69,11 @@ public class Users {
 
         // TODO Auto-generated constructor stub
     }
+
+    public String getUserName() {return userName; }
+
+    public void setUserName(String userName) { this.userName = userName;  }
+
     public String getMember_password() {
         return member_password;
     }
